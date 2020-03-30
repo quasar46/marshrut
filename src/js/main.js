@@ -93,14 +93,22 @@ if (step1.classList.contains('active')) {
 
 // select next element
 btnNext.addEventListener('click', function () {
+	let btnNextSpan = document.querySelector('.btn-next span');
 	let stepActive = document.querySelector('.calculator-step.active');
 	let nextElement = stepActive.nextElementSibling;
+	let step8 = document.querySelector('.calculator-step8');
+
 	nextElement.classList.add('active');
 	stepActive.classList.remove('active');
+	if (step8.classList.contains('active')) {
+		btnNextSpan.innerHTML = 'Отправить';
+	}
 });
 
 // select prev element
 btnPrev.addEventListener('click', function () {
+	let btnNextSpan = document.querySelector('.btn-next span');
+	let step7 = document.querySelector('.calculator-step7');
 	let stepActive = document.querySelector('.calculator-step.active');
 	let prevElement = stepActive.previousElementSibling;
 	prevElement.classList.add('active');
@@ -108,7 +116,10 @@ btnPrev.addEventListener('click', function () {
 	if (step1.classList.contains('active')) {
 		btnStart.style.display = "flex";
 		btns.style.display = "none";
-	}
+	};
+	if (step7.classList.contains('active')) {
+		btnNextSpan.innerHTML = 'Вперед';
+	};
 });
 
 let check1 = document.querySelector('#check1');
@@ -156,3 +167,4 @@ inputs.forEach(input => {
 		}
 	});
 });
+

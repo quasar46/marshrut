@@ -142,23 +142,23 @@ block content
               .calculator__inner.calculator__make-bus-1
                 ul.calculator-step3__list
                   li.calculator-step3__item
-                    input.input--step3(type="checkbox" id="size-bus-1")
+                    input.input--step3(type="radio" id="size-bus-1" name="check2")
                     label(for="size-bus-1")
                       img(src="images/calculator/bus1.png" alt="")
                   li.calculator-step3__item
-                    input.input--step3(type="checkbox" id="size-bus-2")
+                    input.input--step3(type="radio" id="size-bus-2" name="check2")
                     label(for="size-bus-2")
                       img(src="images/calculator/bus2.png" alt="")
                   li.calculator-step3__item
-                    input.input--step3(type="checkbox" id="size-bus-3")
+                    input.input--step3(type="radio" id="size-bus-3" name="check2")
                     label(for="size-bus-3")
                       img(src="images/calculator/bus3.png" alt="")
                   li.calculator-step3__item
-                    input.input--step3(type="checkbox" id="size-bus-4")
+                    input.input--step3(type="radio" id="size-bus-4" name="check2")
                     label(for="size-bus-4")
                       img(src="images/calculator/bus4.png" alt="")
                   li.calculator-step3__item
-                    input.input--step3(type="checkbox" id="size-bus-5")
+                    input.input--step3(type="radio" id="size-bus-5" name="check2")
                     label(for="size-bus-5")
                       img(src="images/calculator/bus5.png" alt="")
                 .calculator-step3__select
@@ -175,15 +175,15 @@ block content
               .calculator__inner.calculator__make-bus-2
                 ul.calculator-step3__list
                   li.calculator-step3__item.calculator-step3__item--mode
-                    input.input--step3(type="checkbox" id="big-size-bus-1")
+                    input.input--step3(type="radio" id="big-size-bus-1" name="check3")
                     label(for="big-size-bus-1")
                       img(src="images/calculator/bus6.png" alt="")
                   li.calculator-step3__item.calculator-step3__item--mode
-                    input.input--step3(type="checkbox" id="big-size-bus-2")
+                    input.input--step3(type="radio" id="big-size-bus-2" name="check3")
                     label(for="big-size-bus-2")
                       img(src="images/calculator/bus7.png" alt="")
                   li.calculator-step3__item.calculator-step3__item--mode
-                    input.input--step3(type="checkbox" id="big-size-bus-3")
+                    input.input--step3(type="radio" id="big-size-bus-3" name="check3")
                     label(for="big-size-bus-3")
                       img(src="images/calculator/bus8.png" alt="")
                 .calculator-step3__select
@@ -212,18 +212,21 @@ block content
                 ul.calculator__format-print-center
                   li.calculator__format-print-center-item
                     input.input--step5(type="checkbox" id="format3")
-                    label(for="format3")
+                    label(for="format3" id="label1")
                       .sheet-label
                         span A5
+                    label(for="format3")
                       .sheet-label
                         span A5                        
                   li.calculator__format-print-center-item
                     input.input--step5(type="checkbox" id="format4")
-                    label(for="format4")
-                      .sheet-label
-                        span A5
-                      .sheet-label
-                        span A5   
+                    .label-wrapper
+                      label(for="format4")
+                        .sheet-label
+                          span A5
+                      label(for="format4")
+                        .sheet-label
+                          span A5   
                 ul.calculator__format-print-right
                   li.calculator__format-print-right-item
                     input.input--step5(type="checkbox" id="format5")
@@ -308,36 +311,36 @@ block content
                   ul.calculator__format-print-top-step7-list
                     div
                       li
-                        input(type="checkbox" id="format14").input--step7
+                        input(type="radio" id="format14"  name="radio-amount1").input--step7
                         label(for="format14")
                           .sheet-label
                             span A4
                     div
                       li
-                        input(type="checkbox" id="format15").input--step7
+                        input(type="radio" id="format15" name="radio-amount").input--step7
                         label(for="format15") 30шт
                       li
-                        input(type="checkbox" id="format16").input--step7
+                        input(type="radio" id="format16" name="radio-amount").input--step7
                         label(for="format16") 40шт
                       li
-                        input(type="checkbox" id="format17").input--step7
+                        input(type="radio" id="format17" name="radio-amount").input--step7
                         label(for="format17") 50шт
                 .calculator__format-print-bottom-step7
                   ul.calculator__format-print-bottom-step7-list
                     div
-                      input(type="checkbox" id="format18").input--step7
+                      input(type="radio" id="format18"  name="radio-amount1").input--step7
                       label(for="format18")
                         .sheet-label
                           span A3
                     div
                       li
-                        input(type="checkbox" id="format19").input--step7
+                        input(type="radio" id="format19" name="radio-amount").input--step7
                         label(for="format19") 30шт
                       li
-                        input(type="checkbox" id="format20").input--step7
+                        input(type="radio" id="format20" name="radio-amount").input--step7
                         label(for="format20") 40шт
                       li
-                        input(type="checkbox" id="format21").input--step7
+                        input(type="radio" id="format21" name="radio-amount").input--step7
                         label(for="format21") 50шт
               p.text Минимальное размещение - 30 маршрутных такси, печать, ламинирование и монтаж рекламно-информационных материалов входит в стоимость размещения
 
@@ -466,8 +469,6 @@ block content
               a(href="#") Спасибы
             li.menu-list-left__item
               a(href="#") Горячее
-            li.menu-list-left__item
-              a(href="#") О компании
             li.menu-list-left__item
               a(href="#") Контакты
           ul.menu-list-right

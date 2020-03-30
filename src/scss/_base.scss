@@ -32,7 +32,7 @@ main {
 	}
 
 	.background-line__picture {
-		object-fit: cover;
+		width: 100%;
 		display: block;
 	}
 }
@@ -68,11 +68,18 @@ ul {
 h2.title {
 	color: $color-purple;
 	font-size: 50px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	font-weight: 400;
 	line-height: 1.2;
+	span {
+		font-family: $opensans-font;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.5;
+		display: block;
+	}
 
-	@media(max-width: 500px) {
+	@media (max-width: 500px) {
 		font-size: 40px;
 	}
 }
