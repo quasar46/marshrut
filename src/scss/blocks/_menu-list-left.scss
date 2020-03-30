@@ -1,0 +1,14 @@
+.menu-list-left__item {
+	a {
+		color: $color-purple;
+		text-decoration: none;
+		font-size: 64px;
+		@media(max-width: 768px) {
+			font-size: 50px;
+		}
+
+		&:hover {
+			color: $color-orange;
+		}
+	}
+}

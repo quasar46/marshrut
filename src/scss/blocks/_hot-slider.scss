@@ -1,0 +1,36 @@
+.hot-slider {
+	display: flex;
+	flex-direction:column;
+	margin-bottom: 80px;
+}
+
+.hot-slider__inner {
+	display: flex;
+	justify-content: center;
+}
+
+.hot-slider__title {
+	font-size: 110px;
+	color: $color-orange;
+	font-weight: 400;
+	text-align: center;
+	margin: 0 80px;
+	margin-top: 50px;
+}
+
+.hot-slider__eye {
+	position: relative;
+	background-image: url("../images/eye.svg");
+	width: 117px;
+	height: 64px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	align-self:center;
+
+	a {
+		font-size: 50px;
+		color: $color-purple;
+		text-decoration: none;
+	}
+}

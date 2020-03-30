@@ -1,0 +1,124 @@
+extends pug/base
+
+append vars
+
+block content
+
+  main
+    .background-line.background-line--top
+      img.background-line__picture(src="images/top-back.png")
+    .main-content
+      .container
+        .burger-menu
+        h1.page-title Контакты
+
+        h2.title Напиши
+
+        ul.contacts-list
+          li.contacts-list__item
+            span Директор Поляков Евгений Викторович:
+            span 
+              a(href="mailto:info@mtvkursk.com") info@mtvkursk.com
+
+          li.contacts-list__item
+            span Менеджер Алёна Хайдарова:
+            span 
+              a(href="mailto:chaspik@mail.ru") chaspik@mail.ru
+
+          li.contacts-list__item
+            span Менеджер Ольга Семыкина:
+            span 
+              a(href="mailto:olga@mtvkursk.com") olga@mtvkursk.com
+
+          li.contacts-list__item 
+            span Менеджер Светлана Гладких:
+            span 
+              a(href="mailto:info@mtvkursk.com") svetlana@mtvkursk.com
+
+          li.contacts-list__item 
+            span Менеджер Татьяна Кондакова:
+            span 
+              a(href="mailto:tz@mtvkursk.com") tz@mtvkursk.com
+
+          li.contacts-list__item
+            span Менеджер Евгения Тиганова:
+            span
+              a(href="mailto:et@mtvkursk.com") et@mtvkursk.com
+
+        .wrapper-bottom
+          .wrapper-bottom__left
+            h2.title Набери
+
+            ul.contacts-list.contacts-list--noflex
+
+              li.contacts-list__item.contacts-list__item--mode
+                a(href="tel:84712546000") +7(4712) 546-000
+              li.contacts-list__item.contacts-list__item--mode
+                a(href="tel:84712749933") +7(4712) 749-933
+
+            h2.title Так проще нас понять
+
+            ul.contacts-list.contacts-list--noflex
+              li.contacts-list__item.contacts-list__item--mode г.Курск, ул. Карла Либкнехта, 9а, 4 этаж.
+          .wrapper-bottom__right
+            img(src="images/wolf.png" alt="")
+
+        .social-and-map
+          .social
+            h2.title Перейди
+            .social__content
+              a.social__links.vk-icn(href="#")
+                img(src="../images/vk-icn.svg" alt="")
+              a.social__links.youtube-icn(href="#")
+                img(src="../images/youtube-icn.svg" alt="")
+              a.social__links.inst-icn(href="#")
+                img(src="../images/inst-icn.svg" alt="")
+          .map
+            img(src="../images/map.png" alt="")
+
+    .background-line.background-line--bottom
+      img.background-line__picture(src="images/bottom-back.png")
+
+    .menu-wrapper
+      .background-line.background-line--bottom
+        img.background-line__picture(src="images/top-back.png")
+
+      .container
+        button.menu-close
+          img(src="../images/menu-close.svg" alt="")
+        .menu
+          ul.menu-list-left
+            li.menu-list-left__item
+              a(href="#") Главная
+            li.menu-list-left__item
+              a(href="#") Калькулятор
+            li.menu-list-left__item
+              a(href="#") Спасибы
+            li.menu-list-left__item
+              a(href="#") Горячее
+            li.menu-list-left__item
+              a(href="#") О компании
+            li.menu-list-left__item
+              a(href="#") Контакты
+          ul.menu-list-right
+            li.menu-list-right__item 
+              span.menu-list-right__title Набери
+              a(href="tel:84712546000") +7(4712) 546-000
+              a(href="tel:84712749933") +7(4712) 749-933
+            li.menu-list-right__item 
+              span.menu-list-right__title Зайди
+              span.menu-list-right__text г.Курск
+              span.menu-list-right__text ул. Карла Либкнехта, 9а, 4 этаж.
+            li.menu-list-right__item 
+              span.menu-list-right__title Напиши
+              a(href="mailto:info@mtvkursk.com") info@mtvkursk.com
+              .social__content
+                a.social__links.vk-icn(href="#")
+                  img(src="../images/vk-icn.svg" alt="")
+                a.social__links.youtube-icn(href="#")
+                  img(src="../images/youtube-icn.svg" alt="")
+                a.social__links.inst-icn(href="#")
+                  img(src="../images/inst-icn.svg" alt="")
+              
+      .background-line.background-line--bottom.background-line--rotate
+        img.background-line__picture(src="images/top-back.png")

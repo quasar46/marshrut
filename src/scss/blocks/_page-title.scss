@@ -1,0 +1,10 @@
+.page-title {
+	color: $color-orange;
+  font-size: 110px;
+  padding-left: 80px;
+  font-weight: 400;
+  @media(max-width: 768px) {
+    font-size: 60px;
+    padding-left: 0;
+  }
+}

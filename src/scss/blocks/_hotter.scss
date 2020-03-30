@@ -1,0 +1,16 @@
+.hotter {
+	margin-bottom: 100px;
+}
+
+.hotter__title {
+	display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+
+	span {
+		font-size: 60px;
+		color: $color-orange;
+    font-weight: 400;
+    margin-right: 10px;
+	}
+}

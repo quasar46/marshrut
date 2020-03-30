@@ -1,0 +1,48 @@
+.slick-slider-brends {
+	padding: 0 200px;
+}
+
+.slick-slider-brends__pic {
+	width: 103px;
+}
+
+.slick-slider-brends .slick-prev,
+.slick-slider-brends-mobile .slick-prev {
+	left: 0;
+	background-image: url("../images/prev.png");
+	background-repeat: no-repeat;
+	width: 33px;
+	height: 33px;
+
+	&::before {
+		font-size: 0;
+	}
+}
+
+.slick-slider-brends .slick-next,
+.slick-slider-brends-mobile .slick-next {
+	right: 0;
+	background-image: url("../images/next.png");
+	background-repeat: no-repeat;
+	width: 33px;
+	height: 33px;
+
+	&::before {
+		font-size: 0;
+	}
+}
+
+.slick-slider-brends-mobile {
+	padding: 0 50px;
+}
+
+.slick-slider-brends-mobile {
+	.slick-slider-brends__pic {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		img {
+			width: 92px;
+		}
+	}
+}

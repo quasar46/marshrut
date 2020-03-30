@@ -1,0 +1,318 @@
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked),
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+
+input.input[type="checkbox"]:checked+label,
+input.input[type="checkbox"]:not(:checked)+label {
+	display: inline-block;
+	position: relative;
+	padding-left: 40px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+input.input--mode[type="radio"]:checked+label,
+input.input--mode[type="radio"]:not(:checked)+label {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+input.input--step3[type="checkbox"]:checked+label,
+input.input--step3[type="checkbox"]:not(:checked)+label {
+	display: inline-block;
+	position: relative;
+	padding-top: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+input.input--step5[type="checkbox"]:checked+label,
+input.input--step5[type="checkbox"]:not(:checked)+label {
+	position: relative;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+input.input--step6[type="checkbox"]:checked+label,
+input.input--step6[type="checkbox"]:not(:checked)+label {
+	display: flex;
+	position: relative;
+	padding-left: 50px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+input.input--step7[type="checkbox"]:checked+label,
+input.input--step7[type="checkbox"]:not(:checked)+label {
+	display: flex;
+	position: relative;
+	padding-left: 50px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+input.input--concent[type="checkbox"]:checked+label,
+input.input--concent[type="checkbox"]:not(:checked)+label {
+	display: inline-block;
+	position: relative;
+	padding-left: 50px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+
+input.input[type="checkbox"]:checked+label::before,
+input.input[type="checkbox"]:not(:checked)+label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 27px;
+	height: 33px;
+	border: 2px solid $color-purple;
+	border-radius: 10px;
+}
+
+input.input[type="checkbox"]:checked+label[disabled]::before,
+input.input[type="checkbox"]:not(:checked)+label[disabled]::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 27px;
+	height: 33px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+}
+
+input.input--mode[type="radio"]:checked+label::before,
+input.input--mode[type="radio"]:not(:checked)+label::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -13px;
+	width: 27px;
+	height: 33px;
+	border: 2px solid $color-purple;
+	border-radius: 10px;
+}
+
+input.input--step3[type="checkbox"]:checked+label::before,
+input.input--step3[type="checkbox"]:not(:checked)+label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 27px;
+	height: 33px;
+	border: 2px solid $color-purple;
+	border-radius: 10px;
+}
+
+input.input--step5[type="checkbox"]:checked+label::before,
+input.input--step5[type="checkbox"]:not(:checked)+label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -40px;
+	width: 27px;
+	height: 33px;
+	border: 2px solid $color-purple;
+	border-radius: 10px;
+}
+
+input.input--step6[type="checkbox"]:checked+label::before,
+input.input--step6[type="checkbox"]:not(:checked)+label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 27px;
+	height: 33px;
+	border: 2px solid $color-purple;
+	border-radius: 10px;
+}
+
+input.input--step7[type="checkbox"]:checked+label::before,
+input.input--step7[type="checkbox"]:not(:checked)+label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 27px;
+	height: 33px;
+	border: 2px solid $color-purple;
+	border-radius: 10px;
+}
+
+input.input--concent[type="checkbox"]:checked+label::before,
+input.input--concent[type="checkbox"]:not(:checked)+label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 27px;
+	height: 33px;
+	border: 2px solid $color-purple;
+	border-radius: 10px;
+}
+
+input.input[type="checkbox"]:checked+label:after {
+	content: "";
+	position: absolute;
+	transition: all 0.2s ease;
+	background-image: url("../images/check.png");
+	width: 41px;
+	height: 38px;
+	top: -7px;
+	left: -10px;
+}
+
+// микроавтобус
+input.input[type="checkbox"]:checked+label[disabled]:after {
+	content: "";
+	position: absolute;
+	transition: all 0.2s ease;
+	background-image: none;
+	width: 41px;
+	height: 38px;
+	top: -7px;
+	left: -10px;
+}
+
+input.input--mode[type="radio"]:checked+label:after {
+	content: "";
+	position: absolute;
+	transition: all 0.2s ease;
+	background-image: url("../images/check.png");
+	width: 41px;
+	height: 38px;
+	bottom: 3px;
+	left: 50%;
+	margin-left: -23px;
+}
+
+input.input--step3[type="checkbox"]:checked+label:after {
+	content: "";
+	position: absolute;
+	transition: all 0.2s ease;
+	background-image: url("../images/check.png");
+	width: 41px;
+	height: 38px;
+	top: -9px;
+	left: -7px;
+}
+
+input.input--step5[type="checkbox"]:checked+label:after {
+	content: "";
+	position: absolute;
+	transition: all 0.2s ease;
+	background-image: url("../images/check.png");
+	width: 41px;
+	height: 38px;
+	top: -9px;
+	left: -47px;
+}
+
+input.input--step6[type="checkbox"]:checked+label:after {
+	content: "";
+	position: absolute;
+	transition: all 0.2s ease;
+	background-image: url("../images/check.png");
+	width: 41px;
+	height: 38px;
+	top: -7px;
+	left: -7px;
+}
+
+input.input--step7[type="checkbox"]:checked+label:after {
+	content: "";
+	position: absolute;
+	transition: all 0.2s ease;
+	background-image: url("../images/check.png");
+	width: 41px;
+	height: 38px;
+	top: -7px;
+	left: -7px;
+}
+
+input.input--concent[type="checkbox"]:checked+label:after {
+	content: "";
+	position: absolute;
+	transition: all 0.2s ease;
+	background-image: url("../images/check.png");
+	width: 41px;
+	height: 38px;
+	top: -7px;
+	left: -7px;
+}
+
+input.input--concent[type="checkbox"]:checked+label:after input.input--step5[type="checkbox"]:checked+label .sheet-label,
+input.input--step6[type="checkbox"]:checked+label .sheet-label,
+input.input--step7[type="checkbox"]:checked+label .sheet-label {
+	background-color: $color-orange;
+
+	span {
+		color: white;
+	}
+}
+
+label[disabled] {
+	span {
+		color: #cccccc;
+	}
+}
+
+
+
+////////////////////////////////////////
+////////////////mobile version
+
+.mobile-step {
+	min-height: 445px;
+}
+
+.mobile-step {
+	.calculator-step2__list {
+		flex-direction: column;
+		margin-bottom: 40px;
+
+		label {
+			padding-bottom: 0 !important;
+			padding-left: 40px;
+
+			&::before {
+				left: 0 !important;
+				margin-left: 0 !important;
+				top: 50%;
+				margin-top: -16px;
+			}
+
+			&::after {
+				left: 0 !important;
+				margin-left: -8px !important;
+			}
+		}
+	}
+
+	.calculator-step2__item {
+		width: 100%;
+		align-items: flex-start;
+	}
+
+	.calculator-step2__list2 {
+		flex-direction: column;
+	}
+
+	.calculator-step2__item2 {
+		width: 100%;
+	}
+}

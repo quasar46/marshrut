@@ -1,0 +1,19 @@
+.contacts-mobile-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts-mobile-list__link {
+	display: flex;
+	align-items: center;
+
+	.contacts-mobile-list__pic {
+		max-width: 160px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.contacts-mobile-list__item {
+	margin-bottom: 20px;
+}

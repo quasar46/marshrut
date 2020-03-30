@@ -1,0 +1,63 @@
+.information {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding-bottom: 300px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: -2;
+		background-image: url("../images/x2fire.png");
+		background-repeat: no-repeat;
+		left: -400px;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.information__title {
+	position: relative;
+	font-size: 110px;
+	color: $color-orange;
+	font-weight: 400;
+
+	&::before {
+		content: "";
+		position: absolute;
+		right: 157px;
+		left: 300px;
+		background-image: url("../images/arrow-d.svg");
+		width: 130px;
+		height: 158px;
+		background-repeat: no-repeat;
+	}
+}
+
+.information__leftblock {
+	width: 60%;
+
+	img {
+		position: absolute;
+		bottom: -100px;
+		left: 100px;
+	}
+}
+
+.information__rightblock {
+	width: 40%;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 0;
+		left: -600px;
+		background-image: url("../images/tv.png");
+		width: 1542px;
+		height: 731px;
+		z-index: -1;
+	}
+}

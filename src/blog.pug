@@ -1,0 +1,100 @@
+extends pug/base
+
+append vars
+
+block content
+
+  main
+    .background-line.background-line--top
+      img.background-line__picture(src="images/top-back.png")
+    .main-content
+
+      .container
+        .burger-menu
+        .wrapper-title-blog
+          h1.page-title Блог
+          img.makentosh-picture(src="images/makentosh.png" alt="")
+        .blog-wrapper
+          aside
+            ul.menu-blog-list
+              li.menu-blog-list__item
+                a(href="#") Все
+              li.menu-blog-list__item
+                a(href="#") Акция
+              li.menu-blog-list__item
+                a(href="#") Новое
+              li.menu-blog-list__item
+                a(href="#") Маршруты
+              li.menu-blog-list__item
+                a(href="#") Достижения
+          .content-blog
+            h2.title.accordion Идем на рекорд
+            .panel
+              p.text В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.
+
+            h2.title.accordion Мы продолжаем увеличение наших рекламных возможностей
+            .panel
+              p.text В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.
+
+            h2.title.accordion Развитие партнерских отношений
+            .panel
+              p.text В феврале 2016 года мы наладили партнерские отношения с Первым Маршрутным Телевидением г. Челябинска.
+
+            h2.title.accordion Увеличение количества мониторов!
+            .panel
+              p.text В этом году силами нашей технической службы было установлено дополнительно 10 медиакомплексов на маршрутах 206 и 228.
+
+            h2.title.accordion Мы продолжаем увеличение наших рекламных возможностей
+            .panel
+              p.text В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.
+
+            h2.title.accordion Развитие партнерских отношений
+            .panel
+              p.text В феврале 2016 года мы наладили партнерские отношения с Первым Маршрутным Телевидением г. Челябинска.
+
+    .background-line.background-line--bottom
+      img.background-line__picture(src="images/bottom-back.png")
+
+    .menu-wrapper
+      .background-line.background-line--bottom
+        img.background-line__picture(src="images/top-back.png")
+
+      .container
+        button.menu-close
+          img(src="../images/menu-close.svg" alt="")
+        .menu
+          ul.menu-list-left
+            li.menu-list-left__item
+              a(href="#") Главная
+            li.menu-list-left__item
+              a(href="#") Калькулятор
+            li.menu-list-left__item
+              a(href="#") Спасибы
+            li.menu-list-left__item
+              a(href="#") Горячее
+            li.menu-list-left__item
+              a(href="#") О компании
+            li.menu-list-left__item
+              a(href="#") Контакты
+          ul.menu-list-right
+            li.menu-list-right__item 
+              span.menu-list-right__title Набери
+              a(href="tel:84712546000") +7(4712) 546-000
+              a(href="tel:84712749933") +7(4712) 749-933
+            li.menu-list-right__item 
+              span.menu-list-right__title Зайди
+              span.menu-list-right__text г.Курск
+              span.menu-list-right__text ул. Карла Либкнехта, 9а, 4 этаж.
+            li.menu-list-right__item 
+              span.menu-list-right__title Напиши
+              a(href="mailto:info@mtvkursk.com") info@mtvkursk.com
+              .social__content
+                a.social__links.vk-icn(href="#")
+                  img(src="../images/vk-icn.svg" alt="")
+                a.social__links.youtube-icn(href="#")
+                  img(src="../images/youtube-icn.svg" alt="")
+                a.social__links.inst-icn(href="#")
+                  img(src="../images/inst-icn.svg" alt="")
+              
+      .background-line.background-line--bottom.background-line--rotate
+        img.background-line__picture(src="images/top-back.png")

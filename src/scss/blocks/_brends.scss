@@ -1,0 +1,12 @@
+.brends {
+	background-image: url("../images/back-color.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 402px;
+	display: flex;
+	align-items: center;
+
+	&--mobile {
+		height: 226px;
+	}
+}

@@ -1,0 +1,32 @@
+.content {
+  padding-bottom: 50px;
+	background-image: url("../images/mobile/curl.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+	h1.title-mobile {
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			top: 20px;
+			left: 0;
+			background-image: url("../images/mobile/question-mark.png");
+			background-repeat: no-repeat;
+			width: 46px;
+			height: 44px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			top: 0;
+			right: 0;
+			background-image: url("../images/mobile/question-mark2.png");
+			background-repeat: no-repeat;
+			width: 61px;
+			height: 80px;
+		}
+	}
+}

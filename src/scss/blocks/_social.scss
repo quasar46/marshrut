@@ -1,0 +1,42 @@
+.social {
+	flex: 1 0 426px;
+
+	@media(max-width: 768px) {
+		order: 1;
+		flex: auto;
+	}
+}
+
+.social__links {
+	margin-right: 25px;
+}
+
+.social__links.vk-icn {
+	width: 66px;
+	height: 65px;
+}
+
+.social__links.youtube-icn {
+	width: 60px;
+	height: 62px;
+}
+
+.social__links.inst-icn {
+	width: 76px;
+	height: 70px;
+}
+
+.social__content {
+	display: flex;
+
+	&--mobile {
+		justify-content: space-around;
+
+		a {
+			margin-right: 0;
+		}
+	}
+}
+
+.social__we-in-social--mobile {
+}

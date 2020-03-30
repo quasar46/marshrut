@@ -1,0 +1,36 @@
+.contacts-list {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+
+	&--noflex {
+		display: block;
+	}
+}
+
+.contacts-list__item {
+	font-family: $opensans-font;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	width: calc(100% / 3);
+	box-sizing: border-box;
+	padding-right: 20px;
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			color: $color-orange;
+		}
+	}
+
+	&--mode {
+		width: 100%;
+	}
+
+	@media(max-width: 768px) {
+		width: 100%;
+	}
+}

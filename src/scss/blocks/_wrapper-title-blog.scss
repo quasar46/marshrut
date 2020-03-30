@@ -1,0 +1,29 @@
+.wrapper-title-blog {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 10;
+
+	.makentosh-picture {
+		@media(max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		background-image: url("../images/fire.png");
+		display: block;
+		width: 765px;
+		height: 476px;
+		right: -380px;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: -1;
+
+		@media(max-width: 768px) {
+			display: none;
+		}
+	}
+}

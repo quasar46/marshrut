@@ -1,0 +1,464 @@
+extends pug/base
+
+append vars
+
+block content
+
+  main
+    .background-line.background-line--top
+      img.background-line__picture(src="images/top-back.png")
+
+    section.main-header
+      .container
+        .burger-menu
+        a(href="#").arrow-back
+          img(src="images/mobile/arrow-back.png" alt="").arrow-back
+
+      .main-banner
+        img(src="images/mobile/bus.png" alt="")
+
+    section.content
+      .container
+        h2.title-mobile.title-mobile--mode 
+          span Че делаем
+        p.text-mobile Маршрутное телевидение – современный инструмент для эффективного вложения рекламных средств компании любого капитала и формата деятельности. Наше рекламное агентство – это профессиональный коллектив и современное оборудование, которое обеспечивает быстрое и качественное выполнение Ваших заказов по низким ценам.
+
+    section
+      .hotter.container
+        h2.hotter__title 
+          span Горячее
+          img(src="images/mobile/x2hot.png" alt="")
+        .slick-slider-mobile__wrapper
+          .slick-slider-mobile
+            .slick-slider-mobile__item
+              .slick-slider-mobile__border
+                img(src="images/mobile/nav-icn.png" alt="")
+              .slick-slider-mobile__content
+                h2.slick-slider-mobile__title Идем на рекорд
+                p.text-mobile В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.
+            .slick-slider-mobile__item
+              .slick-slider-mobile__border
+                img(src="images/mobile/nav-icn.png" alt="")
+              .slick-slider-mobile__content
+                h2.slick-slider-mobile__title Идем на рекорд
+                p.text-mobile В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.
+            .slick-slider-mobile__item
+              .slick-slider-mobile__border
+                img(src="images/mobile/nav-icn.png" alt="")
+              .slick-slider-mobile__content
+                h2.slick-slider-mobile__title Идем на рекорд
+                p.text-mobile В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.
+            .slick-slider-mobile__item
+              .slick-slider-mobile__border
+                img(src="images/mobile/nav-icn.png" alt="")
+              .slick-slider-mobile__content
+                h2.slick-slider-mobile__title Идем на рекорд
+                p.text-mobile В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.
+            .slick-slider-mobile__item
+              .slick-slider-mobile__border
+                img(src="images/mobile/nav-icn.png" alt="")
+              .slick-slider-mobile__content
+                h2.slick-slider-mobile__title Идем на рекорд
+                p.text-mobile В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.В апреле 2018 года был достигнут достигнут рекорд – 200 единиц ТС с рекламными-чехлами подголовниками.
+          .hot-slider__eye
+            a(href="#") все
+
+    section.calculator-mobile
+      .container
+        h2.calculator-mobile__title Калькулятор рекламной компании
+        // calculator step 1
+        .calculator-step.mobile-step.calculator-step1.active
+          .calculator-mobile__picture
+            img(src="images/mobile/calculator-mobile.png" alt="")
+          p.text Текст про калькулятор в стиле "расчитайте свою рекламу с помощью нашего сервиса, это так просто бла бла бла"...Текст про калькулятор в стиле "расчитайте свою рекламу с помощью нашего сервиса, это так просто бла бла бла"...
+
+        // calculator step 2
+        .calculator-step.mobile-step.calculator-step2
+          .calculator__inner
+            .calculator-step2-wrapper
+              ul.calculator-step2__list
+                li.calculator-step2__item
+                  input.input--mode(type="radio" id="check1" name="check1" value="1")
+                  label(for="check1") Брендирование транспорта
+
+                li.calculator-step2__item
+                  input.input--mode(type="radio" id="check2" name="check1" value="1")
+                  label(for="check2") Видеореклама
+
+                li.calculator-step2__item
+                  input.input--mode(type="radio" id="check3" name="check1" value="2")
+                  label(for="check3") Реклама на спинках кресел
+
+                li.calculator-step2__item
+                  input.input--mode(type="radio" id="check4" name="check1" value="2")
+                  label(for="check4") Реклама на стикерах
+
+              ul.calculator-step2__list2
+                li.calculator-step2__item2
+                  input.input(type="checkbox" id="bus1")
+                  label(for="bus1" disabled).bus1
+                    span Микроавтобус <br>
+                    span (Ford, Merscedes, ГазельNext)
+                li.calculator-step2__item2
+                  input.input(type="checkbox" id="paz1")
+                  label(for="paz1" disabled).paz1
+                    span Автобус ПАЗ
+
+        // calculator step 3
+        .calculator-step.mobile-step.calculator-step3
+          .calculator__inner.calculator__make-bus-1
+            ul.calculator-step3__list
+              li.calculator-step3__item
+                input.input--step3(type="checkbox" id="size-bus-1")
+                label(for="size-bus-1")
+                  img(src="images/calculator/bus1.png" alt="")
+              li.calculator-step3__item
+                input.input--step3(type="checkbox" id="size-bus-2")
+                label(for="size-bus-2")
+                  img(src="images/calculator/bus2.png" alt="")
+              li.calculator-step3__item
+                input.input--step3(type="checkbox" id="size-bus-3")
+                label(for="size-bus-3")
+                  img(src="images/calculator/bus3.png" alt="")
+              li.calculator-step3__item
+                input.input--step3(type="checkbox" id="size-bus-4")
+                label(for="size-bus-4")
+                  img(src="images/calculator/bus4.png" alt="")
+              li.calculator-step3__item
+                input.input--step3(type="checkbox" id="size-bus-5")
+                label(for="size-bus-5")
+                  img(src="images/calculator/bus5.png" alt="")
+            .calculator-step3__select
+              span Срок размещения
+              select(name="Размещение")
+                option(value="Значение 1") Значение 1
+                option(value="Значение 2") Значение 2
+                option(value="Значение 3") Значение 3
+                option(value="Значение 4") Значение 4
+            p.text Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. <br> Предусмотрена индивадуальная подборка маршрута.
+
+        // calculator step 4
+        .calculator-step.mobile-step.calculator-step4
+          .calculator__inner.calculator__make-bus-2
+            ul.calculator-step3__list
+              li.calculator-step3__item.calculator-step3__item--mode
+                input.input--step3(type="checkbox" id="big-size-bus-1")
+                label(for="big-size-bus-1")
+                  img(src="images/calculator/bus6.png" alt="")
+              li.calculator-step3__item.calculator-step3__item--mode
+                input.input--step3(type="checkbox" id="big-size-bus-2")
+                label(for="big-size-bus-2")
+                  img(src="images/calculator/bus7.png" alt="")
+              li.calculator-step3__item.calculator-step3__item--mode
+                input.input--step3(type="checkbox" id="big-size-bus-3")
+                label(for="big-size-bus-3")
+                  img(src="images/calculator/bus8.png" alt="")
+            .calculator-step3__select
+              span Срок размещения
+              select(name="Размещение")
+                option(value="Значение 1") Значение 1
+                option(value="Значение 2") Значение 2
+                option(value="Значение 3") Значение 3
+                option(value="Значение 4") Значение 4
+            p.text Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. <br> Предусмотрена индивадуальная подборка маршрута.
+
+        // calculator step 5
+        .calculator-step.mobile-step.calculator-step5
+          .calculator__inner.calculator__format-print
+            ul.calculator__format-print-left
+              li.calculator__format-print-left-item
+                input.input--step5(type="checkbox" id="format1")
+                label(for="format1") 
+                  .sheet-label
+                    span A4
+              li.calculator__format-print-left-item
+                input.input--step5(type="checkbox" id="format2")
+                label(for="format2")
+                  .sheet-label
+                    span A4
+            ul.calculator__format-print-center
+              li.calculator__format-print-center-item
+                input.input--step5(type="checkbox" id="format3")
+                label(for="format3")
+                  .sheet-label
+                    span A5
+                  .sheet-label
+                    span A5                        
+              li.calculator__format-print-center-item
+                input.input--step5(type="checkbox" id="format4")
+                label(for="format4")
+                  .sheet-label
+                    span A5
+                  .sheet-label
+                    span A5   
+            ul.calculator__format-print-right
+              li.calculator__format-print-right-item
+                input.input--step5(type="checkbox" id="format5")
+                label(for="format5")
+                  .sheet-label
+                    span A5 +
+              li.calculator__format-print-right-item
+                input.input--step5(type="checkbox" id="format6")
+                label(for="format6")
+                  .sheet-label
+                    span A5 +
+              li.calculator__format-print-right-item
+                input.input--step5(type="checkbox" id="format7")
+                label(for="format7")
+                  .sheet-label
+                    span A5 +
+              li.calculator__format-print-right-item
+                input.input--step5(type="checkbox" id="format8")
+                label(for="format8")
+                  .sheet-label
+                    span A5 +
+          .calculator-step3__select
+            span Срок размещения
+            select(name="Размещение")
+              option(value="Значение 1") Значение 1
+              option(value="Значение 2") Значение 2
+              option(value="Значение 3") Значение 3
+              option(value="Значение 4") Значение 4
+          p.text Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. <br> Предусмотрена индивадуальная подборка маршрута.
+
+        // calculator step 6
+        .calculator-step.mobile-step.calculator-step6
+          .calculator__inner.calculator__format-print.calculator__format-print--mode
+            .calculator__format-print-top
+              ul.calculator__format-print-top-list
+                li
+                  input.input--step6(type="checkbox" id="format9")
+                  label(for="format9")
+                    .sheet-label
+                      span A6 +
+                    .sheet-label
+                      span A6 +
+                    .sheet-label
+                      span A6 +
+            .calculator__format-print-bottom
+              ul.calculator__format-print-bottom-list
+                .calculator__format-print-bottom-left-list
+                  li
+                    input.input--step6(type="checkbox" id="format10")
+                    label(for="format10")
+                      .sheet-label
+                        span A5
+                  li
+                    input.input--step6(type="checkbox" id="format11")
+                    label(for="format11")
+                      .sheet-label
+                        span A5
+                .calculator__format-print-bottom-right-list
+                  li
+                    input.input--step6(type="checkbox" id="format12")
+                    label(for="format12")
+                      .sheet-label
+                        span A4
+                  li
+                    input.input--step6(type="checkbox" id="format13")
+                    label(for="format13")
+                      .sheet-label
+                        span A4
+          .calculator-step3__select
+            span Срок размещения
+            select(name="Размещение")
+              option(value="Значение 1") Значение 1
+              option(value="Значение 2") Значение 2
+              option(value="Значение 3") Значение 3
+              option(value="Значение 4") Значение 4
+          p.text Минимальное размещение - 10 маршрутных такси, печать, ламинирование и монтаж рекламно-информационных материалов входит в стоимость размещения
+
+        // calculator step 7
+        .calculator-step.mobile-step.calculator-step7
+          .calculator__inner.calculator__format-print--step7
+            .calculator__format-print-top-step7
+              ul.calculator__format-print-top-step7-list
+                div
+                  li
+                    input(type="checkbox" id="format14").input--step7
+                    label(for="format14")
+                      .sheet-label
+                        span A4
+                div
+                  li
+                    input(type="checkbox" id="format15").input--step7
+                    label(for="format15") 30шт
+                  li
+                    input(type="checkbox" id="format16").input--step7
+                    label(for="format16") 40шт
+                  li
+                    input(type="checkbox" id="format17").input--step7
+                    label(for="format17") 50шт
+            .calculator__format-print-bottom-step7
+              ul.calculator__format-print-bottom-step7-list
+                div
+                  input(type="checkbox" id="format18").input--step7
+                  label(for="format18")
+                    .sheet-label
+                      span A3
+                div
+                  li
+                    input(type="checkbox" id="format19").input--step7
+                    label(for="format19") 30шт
+                  li
+                    input(type="checkbox" id="format20").input--step7
+                    label(for="format20") 40шт
+                  li
+                    input(type="checkbox" id="format21").input--step7
+                    label(for="format21") 50шт
+          p.text Минимальное размещение - 30 маршрутных такси, печать, ламинирование и монтаж рекламно-информационных материалов входит в стоимость размещения
+
+        // calculator step 8
+        .calculator-step.mobile-step.calculator-step8
+          .calculator__inner.calculator__indicate-contacts
+            p.text Укажите свои контактные данные. В ближайшее время с Вами свяжется наш менеджер.
+            ul.calculator__indicate-list
+              li.contacts__indicate-item
+                label.contacts__indicate-label(for="name") ФИО
+                input(type="text" id="name")
+              li.contacts__indicate-item
+                label.contacts__indicate-label(for="email") E-mail
+                input(type="email" id="email")
+              li.contacts__indicate-item
+                label.contacts__indicate-label(for="phone") Номер
+                input(type="text" id="phone")
+              input(type="checkbox" id="concent").input--concent
+              label(for="concent") Я согласен с условиями обработки персональных данных
+
+        // btn start
+        button.btn-start.calculator__btn.calculator__start
+          span Начать
+          .calculator__picture-next
+            img(src="images/mobile/arrow-next.png" alt="")
+
+
+
+      // Buttons calculator
+      .calculator__btns
+        button.btn-prev.calculator__btn.calculator__prev
+          .calculator__picture-prev
+            img(src="images/mobile/arrow-back.png" alt="")
+          span Назад
+        button.btn-next.calculator__btn.calculator__next
+          span Далее
+          .calculator__picture-next
+            img(src="images/mobile/arrow-next.png" alt="")
+
+
+      .calculator__thanks.calculator__thanks--mobile Спасибы
+
+    section.brends.brends--mobile
+      .container
+        .slick-slider-brends-mobile
+          .slider-slick-brends__item
+            .slick-slider-brends__pic
+              img(src="images/brend1.svg" alt="")
+          .slider-slick-brends__item
+            .slick-slider-brends__pic
+              img(src="images/brend2.svg" alt="")
+          .slider-slick-brends__item
+            .slick-slider-brends__pic
+              img(src="images/brend3.svg" alt="")
+          .slider-slick-brends__item
+            .slick-slider-brends__pic
+              img(src="images/brend4.png" alt="")
+          .slider-slick-brends__item
+            .slick-slider-brends__pic
+              img(src="images/brend3.svg" alt="")
+          .slider-slick-brends__item
+            .slick-slider-brends__pic
+              img(src="images/brend1.svg" alt="")
+          .slider-slick-brends__item
+            .slick-slider-brends__pic
+              img(src="images/brend2.svg" alt="")
+          .slider-slick-brends__item
+            .slick-slider-brends__pic
+              img(src="images/brend3.svg" alt="")
+          .slider-slick-brends__item
+            .slick-slider-brends__pic
+              img(src="images/brend4.png" alt="")
+          .slider-slick-brends__item
+            .slick-slider-brends__pic
+              img(src="images/brend3.svg" alt="")
+
+    section.contacts-mobile
+      .container
+        h2.title-mobile Контакты
+        ul.contacts-mobile-list
+          li.contacts-mobile-list__item
+            a.contacts-mobile-list__link(href="tel:546000")
+              .contacts-mobile-list__pic
+                img(src="images/mobile/phone.png" alt="")
+              span 546-000
+          li.contacts-mobile-list__item
+            a.contacts-mobile-list__link
+              .contacts-mobile-list__pic
+                img(src="images/mobile/world.png" alt="")
+              span г. Курск  ул. Карла Либкнехта дом 9а, 4 этаж
+          li.contacts-mobile-list__item
+            a.contacts-mobile-list__link(href="mailto:info@mtvkursk.com")
+              .contacts-mobile-list__pic
+                img(src="images/mobile/mail.png" alt="")
+              span info@mtvkursk.com
+
+    section.social-mobile
+      .container
+        .social.social--mobile
+          .social__we-in-social.social__we-in-social--mobile
+            img(src="images/mobile/we-in-social.png" alt="")
+          .social__content.social__content--mobile
+            a.social__links.vk-icn(href="#")
+              img(src="../images/vk-icn.svg" alt="")
+            a.social__links.youtube-icn(href="#")
+              img(src="../images/youtube-icn.svg" alt="")
+            a.social__links.inst-icn(href="#")
+              img(src="../images/inst-icn.svg" alt="")
+
+
+
+    .background-line.background-line--bottom
+      img.background-line__picture(src="images/bottom-back.png")
+
+    .menu-wrapper
+      .background-line.background-line--bottom
+        img.background-line__picture(src="images/top-back.png")
+
+      .container
+        button.menu-close
+          img(src="../images/menu-close.svg" alt="")
+        .menu
+          ul.menu-list-left
+            li.menu-list-left__item
+              a(href="#") Главная
+            li.menu-list-left__item
+              a(href="#") Калькулятор
+            li.menu-list-left__item
+              a(href="#") Спасибы
+            li.menu-list-left__item
+              a(href="#") Горячее
+            li.menu-list-left__item
+              a(href="#") О компании
+            li.menu-list-left__item
+              a(href="#") Контакты
+          ul.menu-list-right
+            li.menu-list-right__item 
+              span.menu-list-right__title Набери
+              a(href="tel:84712546000") +7(4712) 546-000
+              a(href="tel:84712749933") +7(4712) 749-933
+            li.menu-list-right__item 
+              span.menu-list-right__title Зайди
+              span.menu-list-right__text г.Курск
+              span.menu-list-right__text ул. Карла Либкнехта, 9а, 4 этаж.
+            li.menu-list-right__item 
+              span.menu-list-right__title Напиши
+              a(href="mailto:info@mtvkursk.com") info@mtvkursk.com
+              .social__content
+                a.social__links.vk-icn(href="#")
+                  img(src="../images/vk-icn.svg" alt="")
+                a.social__links.youtube-icn(href="#")
+                  img(src="../images/youtube-icn.svg" alt="")
+                a.social__links.inst-icn(href="#")
+                  img(src="../images/inst-icn.svg" alt="")
+
+      .background-line.background-line--bottom.background-line--rotate
+        img.background-line__picture(src="images/top-back.png")

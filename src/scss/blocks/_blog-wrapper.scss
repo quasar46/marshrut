@@ -1,0 +1,16 @@
+.blog-wrapper {
+	display: flex;
+
+	h2.title {
+
+		&:hover,
+		&.active {
+			color: $color-orange;
+			cursor: pointer;
+		}
+	}
+
+	@media(max-width: 768px) {
+		flex-direction: column;
+	}
+}

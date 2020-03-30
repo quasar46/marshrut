@@ -1,0 +1,17 @@
+.wrapper-bottom {
+	display: flex;
+}
+
+.wrapper-bottom__left {
+	flex: 1 0 426px;
+
+	@media(max-width: 768px) {
+		flex: auto;
+	}
+}
+
+.wrapper-bottom__right {
+	@media(max-width: 768px) {
+		display: none;
+	}
+}

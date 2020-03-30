@@ -1,0 +1,50 @@
+extends pug/base
+
+append vars
+
+block content
+
+  main
+    .menu-wrapper
+      .background-line
+        img.background-line__picture(src="images/top-back.png")
+
+      .container
+        button.menu-close
+          img(src="../images/menu-close.svg" alt="")
+        .menu
+          ul.menu-list-left
+            li.menu-list-left__item
+              a(href="#") Главная
+            li.menu-list-left__item
+              a(href="#") Калькулятор
+            li.menu-list-left__item
+              a(href="#") Спасибы
+            li.menu-list-left__item
+              a(href="#") Горячее
+            li.menu-list-left__item
+              a(href="#") О компании
+            li.menu-list-left__item
+              a(href="#") Контакты
+          ul.menu-list-right
+            li.menu-list-right__item 
+              span.menu-list-right__title Набери
+              a(href="tel:84712546000") +7(4712) 546-000
+              a(href="tel:84712749933") +7(4712) 749-933
+            li.menu-list-right__item 
+              span.menu-list-right__title Зайди
+              span.menu-list-right__text г.Курск
+              span.menu-list-right__text ул. Карла Либкнехта, 9а, 4 этаж.
+            li.menu-list-right__item 
+              span.menu-list-right__title Напиши
+              a(href="mailto:info@mtvkursk.com") info@mtvkursk.com
+              .social__content
+                a.social__links.vk-icn(href="#")
+                  img(src="../images/vk-icn.svg" alt="")
+                a.social__links.youtube-icn(href="#")
+                  img(src="../images/youtube-icn.svg" alt="")
+                a.social__links.inst-icn(href="#")
+                  img(src="../images/inst-icn.svg" alt="")
+
+      .background-line.background-line--rotate
+        img.background-line__picture(src="images/top-back.png")
