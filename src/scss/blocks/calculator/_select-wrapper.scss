@@ -1,0 +1,29 @@
+.select-wrapper {
+  p {
+    font-family: $opensans-font;
+    font-size: 18px;
+  }
+}
+
+.select-wrapper__inner {
+	display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+	span,
+	select {
+		font-family: $opensans-font;
+		font-size: 18px;
+	}
+
+	span {
+		margin-right: 50px;
+	}
+
+	select {
+		max-width: 500px;
+		width: 100%;
+    border: 2px solid $color-purple;
+    padding: 2px 5px;
+	}
+}

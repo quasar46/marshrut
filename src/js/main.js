@@ -168,3 +168,16 @@ inputs.forEach(input => {
 	});
 });
 
+// step 6 должен делать инпут checked если есть хотя бы один .active у .sheet
+var sheets = document.querySelectorAll('.sheet-select');
+sheets.forEach(sheet => {
+	var sheetsActive = document.querySelectorAll('sheet.active');
+	sheet.addEventListener('click', function () {
+		this.classList.toggle('active');
+		if (sheetsActive.length < 1) {
+			document.querySelector('#input-step6-1').setAttribute('checked', '');
+		} else {
+			document.querySelector('#input-step6-1').removeAttribute('checked', '');
+		}
+	})
+})

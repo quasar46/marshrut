@@ -73,77 +73,77 @@ block content
           p.text Текст про калькулятор в стиле "расчитайте свою рекламу с помощью нашего сервиса, это так просто бла бла бла"...Текст про калькулятор в стиле "расчитайте свою рекламу с помощью нашего сервиса, это так просто бла бла бла"...
 
         // calculator step 2
-        .calculator-step.mobile-step.calculator-step2
-          .calculator__inner
-            .calculator-step2-wrapper
-              ul.calculator-step2__list
-                li.calculator-step2__item
-                  input.input--mode(type="radio" id="check1" name="check1" value="1")
-                  label(for="check1") Брендирование транспорта
+        .calculator-step.calculator-mobile-step2.calculator-step2
+          .calculator-mobile-step2__wrapper
+            ul.calculator-mobile-step2__list-top
+              li
+                input(type="radio" id="input-mobile-step2-1" name="input-mobile-step11")
+                label(for="input-mobile-step2-1")
+                  span Брендирование транспорта
+              li
+                input(type="radio" id="input-mobile-step2-2" name="input-mobile-step11")
+                label(for="input-mobile-step2-2")
+                  span Видеореклама
+              li
+                input(type="radio" id="input-mobile-step2-3" name="input-mobile-step21")
+                label(for="input-mobile-step2-3")
+                  span Реклама на спинках кресел
+              li
+                input(type="radio" id="input-mobile-step2-4" name="input-mobile-step21")
+                label(for="input-mobile-step2-4")
+                  span Реклама на стикерах
+            ul.calculator-mobile-step2__list-bottom
+              li
+                input(type="radio" id="input-mobile-step2-5" name="input-mobile-step22")
+                label(for="input-mobile-step2-5")
+                  span Микроавтобус 
+                  span (Ford, Merscedes, ГазельNext) 
+              li
+                input(type="radio" id="input-mobile-step2-6" name="input-mobile-step22")
+                label(for="input-mobile-step2-6")
+                  span Автобус ПАЗ
 
-                li.calculator-step2__item
-                  input.input--mode(type="radio" id="check2" name="check1" value="1")
-                  label(for="check2") Видеореклама
-
-                li.calculator-step2__item
-                  input.input--mode(type="radio" id="check3" name="check1" value="2")
-                  label(for="check3") Реклама на спинках кресел
-
-                li.calculator-step2__item
-                  input.input--mode(type="radio" id="check4" name="check1" value="2")
-                  label(for="check4") Реклама на стикерах
-
-              ul.calculator-step2__list2
-                li.calculator-step2__item2
-                  input.input(type="checkbox" id="bus1")
-                  label(for="bus1" disabled).bus1
-                    span Микроавтобус <br>
-                    span (Ford, Merscedes, ГазельNext)
-                li.calculator-step2__item2
-                  input.input(type="checkbox" id="paz1")
-                  label(for="paz1" disabled).paz1
-                    span Автобус ПАЗ
 
         // calculator step 3
-        .calculator-step.mobile-step.calculator-step3
-          .calculator__inner.calculator__make-bus-1
-            ul.calculator-step3__list
-              li.calculator-step3__item
-                input.input--step3(type="radio" id="size-bus-1" name="check2")
-                label(for="size-bus-1")
-                  .calculator-step3__item-picture
+        .calculator-step.calculator-mobile-step3
+          .calculator-mobile-step3__wrapper
+            ul.calculator-mobile-step3__list
+              li
+                input(type="radio" id="input-mobile-step3-1" name="input-mobile-step31")
+                label(for="input-mobile-step3-1")
+                  .calculator-mobile-step3__picture
                     span 4м2
-                    .calculator-step3__item-picture-inner
+                    .calculator-mobile-step3__picture-inner
                       img(src="images/mobile/bus-calc-2-1.png" alt="")
-              li.calculator-step3__item
-                input.input--step3(type="radio" id="size-bus-2" name="check2")
-                label(for="size-bus-2")
-                  .calculator-step3__item-picture
+              li
+                input(type="radio" id="input-mobile-step3-2" name="input-mobile-step31")
+                label(for="input-mobile-step3-2")
+                  .calculator-mobile-step3__picture
                     span 1,8м2
-                    .calculator-step3__item-picture-inner
+                    .calculator-mobile-step3__picture-inner
                       img(src="images/mobile/bus-calc-2-2.png" alt="")
-              li.calculator-step3__item
-                input.input--step3(type="radio" id="size-bus-3" name="check2")
-                label(for="size-bus-3")
-                  .calculator-step3__item-picture
+              li
+                input(type="radio" id="input-mobile-step3-3" name="input-mobile-step31")
+                label(for="input-mobile-step3-3")
+                  .calculator-mobile-step3__picture
                     span 2,4м2
-                    .calculator-step3__item-picture-inner
+                    .calculator-mobile-step3__picture-inner
                       img(src="images/mobile/bus-calc-2-3.png" alt="")
-              li.calculator-step3__item
-                input.input--step3(type="radio" id="size-bus-4" name="check2")
-                label(for="size-bus-4")
-                  .calculator-step3__item-picture
+              li
+                input(type="radio" id="input-mobile-step3-4" name="input-mobile-step31")
+                label(for="input-mobile-step3-4")
+                  .calculator-mobile-step3__picture
                     span 1,2м2
-                    .calculator-step3__item-picture-inner
+                    .calculator-mobile-step3__picture-inner
                       img(src="images/mobile/bus-calc-2-4.png" alt="")
-              li.calculator-step3__item
-                input.input--step3(type="radio" id="size-bus-5" name="check2")
-                label(for="size-bus-5")
-                  .calculator-step3__item-picture
+              li
+                input(type="radio" id="input-mobile-step3-5" name="input-mobile-step31")
+                label(for="input-mobile-step3-5")
+                  .calculator-mobile-step3__picture
                     span 3м2
-                    .calculator-step3__item-picture-inner
+                    .calculator-mobile-step3__picture-inner
                       img(src="images/mobile/bus-calc-2-5.png" alt="")
-            .calculator-step3__select
+            .calculator-mobile__select
               span Срок размещения
               select(name="Размещение")
                 option(value="Значение 1") Значение 1
@@ -153,31 +153,31 @@ block content
             p.text Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. <br> Предусмотрена индивадуальная подборка маршрута.
 
         // calculator step 4
-        .calculator-step.mobile-step.calculator-step4
-          .calculator__inner.calculator__make-bus-2
-            ul.calculator-step3__list
-              li.calculator-step3__item.calculator-step3__item--mode
-                input.input--step3(type="radio" id="big-size-bus-1" name="check3")
-                label(for="big-size-bus-1")
-                  .calculator-step3__item-picture
-                    span 1,8м2
-                    .calculator-step3__item-picture-inner
+        .calculator-step.calculator-mobile-step3
+          .calculator-mobile-step3__wrapper
+            ul.calculator-mobile-step3__list
+              li
+                input(type="radio" id="input-mobile-step4-1" name="input-mobile-step41")
+                label(for="input-mobile-step4-1")
+                  .calculator-mobile-step3__picture
+                    span 1,3м2
+                    .calculator-mobile-step3__picture-inner
                       img(src="images/mobile/bus-calc-2-6.png" alt="")
-              li.calculator-step3__item.calculator-step3__item--mode
-                input.input--step3(type="radio" id="big-size-bus-2" name="check3")
-                label(for="big-size-bus-2")
-                  .calculator-step3__item-picture
-                    span 1,8м2
-                    .calculator-step3__item-picture-inner
+              li
+                input(type="radio" id="input-mobile-step4-2" name="input-mobile-step41")
+                label(for="input-mobile-step4-2")
+                  .calculator-mobile-step3__picture
+                    span 1,3м2
+                    .calculator-mobile-step3__picture-inner
                       img(src="images/mobile/bus-calc-2-7.png" alt="")
-              li.calculator-step3__item.calculator-step3__item--mode
-                input.input--step3(type="radio" id="big-size-bus-3" name="check3")
-                label(for="big-size-bus-3")
-                  .calculator-step3__item-picture
-                    span 1,8м2
-                    .calculator-step3__item-picture-inner
+              li
+                input(type="radio" id="input-mobile-step4-3" name="input-mobile-step41")
+                label(for="input-mobile-step4-3")
+                  .calculator-mobile-step3__picture
+                    span 2,3м2
+                    .calculator-mobile-step3__picture-inner
                       img(src="images/mobile/bus-calc-2-8.png" alt="")
-            .calculator-step3__select
+            .calculator-mobile__select
               span Срок размещения
               select(name="Размещение")
                 option(value="Значение 1") Значение 1
@@ -186,71 +186,24 @@ block content
                 option(value="Значение 4") Значение 4
             p.text Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. <br> Предусмотрена индивадуальная подборка маршрута.
 
-        // calculator step 5
-        .calculator-step.mobile-step.calculator-step5
-          .calculator__inner.calculator__format-print.calculator__format-print--mobile
-            ul.calculator__format-print-list
-              input.input--format(type="radio" id="radio-size1" name="radio-size")
-              label(for="radio-size1")
-                span А4
-              input.input--format(type="radio" id="radio-size2" name="radio-size")
-              label(for="radio-size2")
-                span А5
-              input.input--format(type="radio" id="radio-size3" name="radio-size")
-              label(for="radio-size3")
-                span А5+
-            //- ul.calculator__format-print-left
-            //-   li.calculator__format-print-left-item
-            //-     input.input--step5(type="checkbox" id="format1")
-            //-     label(for="format1") 
-            //-       .sheet-label
-            //-         span A4
-            //-   li.calculator__format-print-left-item
-            //-     input.input--step5(type="checkbox" id="format2")
-            //-     label(for="format2")
-            //-       .sheet-label
-            //-         span A4
-            //- ul.calculator__format-print-center
-            //-   li.calculator__format-print-center-item
-            //-     input.input--step5(type="checkbox" id="format3-1")
-            //-     input.input--step5(type="checkbox" id="format3-2")
-            //-     label(for="format3-1")
-            //-       .sheet-label
-            //-         span A5
-            //-     label(for="format3-2")
-            //-       .sheet-label
-            //-         span A5                        
-            //-   li.calculator__format-print-center-item
-            //-     input.input--step5(type="checkbox" id="format4-1")
-            //-     input.input--step5(type="checkbox" id="format4-2")
-            //-     label(for="format4-1")
-            //-       .sheet-label
-            //-         span A5
-            //-     label(for="format4-2")
-            //-       .sheet-label
-            //-         span A5   
-            //- ul.calculator__format-print-right
-            //-   li.calculator__format-print-right-item
-            //-     input.input--step5(type="checkbox" id="format5")
-            //-     label(for="format5")
-            //-       .sheet-label
-            //-         span A5 +
-            //-   li.calculator__format-print-right-item
-            //-     input.input--step5(type="checkbox" id="format6")
-            //-     label(for="format6")
-            //-       .sheet-label
-            //-         span A5 +
-            //-   li.calculator__format-print-right-item
-            //-     input.input--step5(type="checkbox" id="format7")
-            //-     label(for="format7")
-            //-       .sheet-label
-            //-         span A5 +
-            //-   li.calculator__format-print-right-item
-            //-     input.input--step5(type="checkbox" id="format8")
-            //-     label(for="format8")
-            //-       .sheet-label
-            //-         span A5 +
-          .calculator-step3__select
+        // calculator step 5-1
+        .calculator-step.calculator-mobile-step5-1
+          .calculator-mobile-step5-1__wrapper
+            ul.calculator-mobile-step5-1__list
+              li
+                input(type="radio" id="input-mobile-step5-1" name="input-mobile-step51")
+                label(for="input-mobile-step5-1")
+                  span A4
+              li
+                input(type="radio" id="input-mobile-step5-2" name="input-mobile-step51")
+                label(for="input-mobile-step5-2")
+                  span A5
+              li
+                input(type="radio" id="input-mobile-step5-3" name="input-mobile-step51")
+                label(for="input-mobile-step5-3")
+                  span A5 +
+
+          .calculator-mobile__select
             span Срок размещения
             select(name="Размещение")
               option(value="Значение 1") Значение 1
@@ -259,25 +212,22 @@ block content
               option(value="Значение 4") Значение 4
           p.text Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. <br> Предусмотрена индивадуальная подборка маршрута.
 
-        // calculator step 5
-        .calculator-step.mobile-step.calculator-step5
-          .calculator__inner.calculator__format-print.calculator__format-print--mobile
-            h3 Вариант расположения:
-            ul.calculator__format-print-list
-              input.input--format(type="radio" id="radio-size1" name="radio-size")
-              label(for="radio-size1")
-                .sheet-label
-                  span А4
-              input.input--format(type="radio" id="radio-size2" name="radio-size")
-              label(for="radio-size2")
-                .sheet-label
-                  span А5
-              input.input--format(type="radio" id="radio-size3" name="radio-size")
-              label(for="radio-size3")
-                .sheet-label
-                  span А5+
-
-          .calculator-step3__select
+        // calculator step 5-2
+        .calculator-step.calculator-mobile-step5-2
+          p.text Варианты расположени
+          .calculator-mobile-step5-2__wrapper
+            ul.calculator-mobile-step5-2__list
+              li
+                input(type="radio" id="input-mobile-step5-4" name="input-mobile-step52")
+                label(for="input-mobile-step5-4")
+                  .sheet
+                    span A4
+              li
+                input(type="radio" id="input-mobile-step5-5" name="input-mobile-step52")
+                label(for="input-mobile-step5-5")
+                  .sheet
+                    span A4
+          .calculator-mobile__select
             span Срок размещения
             select(name="Размещение")
               option(value="Значение 1") Значение 1
@@ -287,114 +237,113 @@ block content
           p.text Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. <br> Предусмотрена индивадуальная подборка маршрута.
 
 
-        // calculator step 6
-        .calculator-step.mobile-step.calculator-step6
-          .calculator__inner.calculator__format-print.calculator__format-print--mode
-            .calculator__format-print-top
-              ul.calculator__format-print-top-list
-                li
-                  input.input--step6(type="checkbox" id="format9")
-                  label(for="format9")
-                    .sheet-label
-                      span A6 +
-                    .sheet-label
-                      span A6 +
-                    .sheet-label
-                      span A6 +
-            .calculator__format-print-bottom
-              ul.calculator__format-print-bottom-list
-                .calculator__format-print-bottom-left-list
-                  li
-                    input.input--step6(type="checkbox" id="format10")
-                    label(for="format10")
-                      .sheet-label
-                        span A5
-                  li
-                    input.input--step6(type="checkbox" id="format11")
-                    label(for="format11")
-                      .sheet-label
-                        span A5
-                .calculator__format-print-bottom-right-list
-                  li
-                    input.input--step6(type="checkbox" id="format12")
-                    label(for="format12")
-                      .sheet-label
-                        span A4
-                  li
-                    input.input--step6(type="checkbox" id="format13")
-                    label(for="format13")
-                      .sheet-label
-                        span A4
-          .calculator-step3__select
+        // calculator step 6-1
+        .calculator-step.calculator-mobile-step5-1
+          .calculator-mobile-step5-1__wrapper
+            ul.calculator-mobile-step5-1__list
+              li
+                input(type="radio" id="input-mobile-step6-1" name="input-mobile-step61")
+                label(for="input-mobile-step6-1")
+                  span A4
+              li
+                input(type="radio" id="input-mobile-step6-2" name="input-mobile-step61")
+                label(for="input-mobile-step6-2")
+                  span A5
+              li
+                input(type="radio" id="input-mobile-step6-3" name="input-mobile-step61")
+                label(for="input-mobile-step6-3")
+                  span A5 +
+
+          .calculator-mobile__select
             span Срок размещения
             select(name="Размещение")
               option(value="Значение 1") Значение 1
               option(value="Значение 2") Значение 2
               option(value="Значение 3") Значение 3
               option(value="Значение 4") Значение 4
-          p.text Минимальное размещение - 10 маршрутных такси, печать, ламинирование и монтаж рекламно-информационных материалов входит в стоимость размещения
+          p.text Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. <br> Предусмотрена индивадуальная подборка маршрута.
 
-        // calculator step 7
-        .calculator-step.mobile-step.calculator-step7
-          .calculator__inner.calculator__format-print--step7
-            .calculator__format-print-top-step7
-              ul.calculator__format-print-top-step7-list
-                div
-                  li
-                    input(type="checkbox" id="format14").input--step7
-                    label(for="format14")
-                      .sheet-label
-                        span A4
-                div
-                  li
-                    input(type="checkbox" id="format15").input--step7
-                    label(for="format15") 30шт
-                  li
-                    input(type="checkbox" id="format16").input--step7
-                    label(for="format16") 40шт
-                  li
-                    input(type="checkbox" id="format17").input--step7
-                    label(for="format17") 50шт
-            .calculator__format-print-bottom-step7
-              ul.calculator__format-print-bottom-step7-list
-                div
-                  input(type="checkbox" id="format18").input--step7
-                  label(for="format18")
-                    .sheet-label
-                      span A3
-                div
-                  li
-                    input(type="checkbox" id="format19").input--step7
-                    label(for="format19") 30шт
-                  li
-                    input(type="checkbox" id="format20").input--step7
-                    label(for="format20") 40шт
-                  li
-                    input(type="checkbox" id="format21").input--step7
-                    label(for="format21") 50шт
+        // calculator step 6-2
+        .calculator-step.calculator-mobile-step5-2
+          p.text Варианты расположени
+          .calculator-mobile-step5-2__wrapper
+            ul.calculator-mobile-step5-2__list
+              li
+                input(type="radio" id="input-mobile-step6-4" name="input-mobile-step62")
+                label(for="input-mobile-step6-4")
+                  .sheet
+                    span A4
+              li
+                input(type="radio" id="input-mobile-step6-5" name="input-mobile-step62")
+                label(for="input-mobile-step6-5")
+                  .sheet
+                    span A4
+          .calculator-mobile__select
+            span Срок размещения
+            select(name="Размещение")
+              option(value="Значение 1") Значение 1
+              option(value="Значение 2") Значение 2
+              option(value="Значение 3") Значение 3
+              option(value="Значение 4") Значение 4
+          p.text Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. <br> Предусмотрена индивадуальная подборка маршрута.
+
+        // calculator step 7-1
+        .calculator-step.calculator-mobile-step5-1
+          .calculator-mobile-step5-1__wrapper
+            ul.calculator-mobile-step5-1__list
+              li
+                input(type="radio" id="input-mobile-step7-1" name="input-mobile-step71")
+                label(for="input-mobile-step7-1")
+                  span 30 шт
+              li
+                input(type="radio" id="input-mobile-step7-2" name="input-mobile-step71")
+                label(for="input-mobile-step7-2")
+                  span 40 шт
+              li
+                input(type="radio" id="input-mobile-step7-3" name="input-mobile-step71")
+                label(for="input-mobile-step7-3")
+                  span 50 шт
+
           p.text Минимальное размещение - 30 маршрутных такси, печать, ламинирование и монтаж рекламно-информационных материалов входит в стоимость размещения
 
+        // calculator step 7-2
+        .calculator-step.calculator-mobile-step5-2
+          p.text Варианты расположени
+          .calculator-mobile-step5-2__wrapper
+            ul.calculator-mobile-step5-2__list
+              li
+                input(type="radio" id="input-mobile-step7-4" name="input-mobile-step72")
+                label(for="input-mobile-step7-4")
+                  .sheet
+                    span A4
+              li
+                input(type="radio" id="input-mobile-step7-5" name="input-mobile-step72")
+                label(for="input-mobile-step7-5")
+                  .sheet
+                    span A3
+
+          p.text Минимальное размещение - 30 маршрутных такси, печать, ламинирование и монтаж рекламно-информационных материалов входит в стоимость размещения
+
+
         // calculator step 8
-        .calculator-step.mobile-step.calculator-step8.calculator-step8--mobile
-          .calculator__inner.calculator__indicate-contacts
+        .calculator-step.calculator-mobile-step8
+          .calculator-mobile-step8__wrapper
             p.text Укажите свои контактные данные. В ближайшее время с Вами свяжется наш менеджер.
-            ul.calculator__indicate-list
-              li.contacts__indicate-item
+            ul.calculator-mobile-step8__list
+              li
                 input(type="text" id="name" placeholder="ФИО")
-              li.contacts__indicate-item
+              li
                 input(type="email" id="email" placeholder="Почтовый адрес")
-              li.contacts__indicate-item
+              li
                 input(type="text" id="phone" placeholder="Номер телефона")
-              input(type="checkbox" id="concent").input--concent
+              input(type="checkbox" id="concent")
               label(for="concent") Я согласен с условиями обработки персональных данных
 
-        // btn start
-        button.btn-start.calculator__btn.calculator__start
-          span Начать
-          .calculator__picture-next
-            img(src="images/mobile/arrow-next.png" alt="")
-
-
+      // btn start
+      button.btn-start.calculator__btn.calculator__start
+        span Начать
+        .calculator__picture-next
+          img(src="images/mobile/arrow-next.png" alt="")
 
       // Buttons calculator
       .calculator__btns

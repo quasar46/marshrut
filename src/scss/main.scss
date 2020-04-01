@@ -28,7 +28,7 @@
 @import "blocks/background-line";
 @import "blocks/hot-slider";
 @import "blocks/slick-slider-hot";
-@import "blocks/calculator";
+@import "blocks/calculator/calculator";
 @import "blocks/brends";
 @import "blocks/slick-slider-brends";
 @import "blocks/contacts";
@@ -36,7 +36,8 @@
 @import "blocks/content";
 @import "blocks/hotter";
 @import "blocks/slick-slider-mobile";
-@import "blocks/calculator-mobile";
 @import "blocks/contacts-mobile-list";
 @import "blocks/social-mobile";
-@import "blocks/style-checkbox";
+@import "blocks/calculator/calculator-mobile";
+@import "blocks/calculator/style-checkbox";
+@import "blocks/calculator/select-wrapper";
