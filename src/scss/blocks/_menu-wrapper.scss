@@ -12,4 +12,7 @@
 	&.active {
 		display: flex;
 	}
+	@media(max-height: 768px) {
+		
+	}
 }

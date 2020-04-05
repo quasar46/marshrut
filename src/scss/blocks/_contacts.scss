@@ -7,16 +7,14 @@
 
 .contacts__top {
 	display: flex;
-	// align-items: center;
 	justify-content: space-between;
-	flex-grow: 1;
-	align-items: stretch;
 	margin-bottom: 50px;
 }
 
 .contacts__item {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 
 	p.text {
 		margin-top: auto;
@@ -25,6 +23,14 @@
 
 	a {
 		text-decoration: none;
+	}
+	&:nth-child(2) {
+		margin: 0 20px;
+	}
+	&:first-child,
+	&:last-child {
+		max-width: 300px;
+		width: 100%;
 	}
 }
 
@@ -38,21 +44,21 @@
 	.social {
 		display: flex;
 		align-items: flex-end;
-  }
-  .vk-icn {
-    width: 173px;
-    height: 182px;
-  }
-  .youtube-icn {
-    width: 155px;
-    height: 169px;
-  }
-  .inst-icn {
-    width: 199px;
-    height: 182px;
-  }
+	}
+	.vk-icn {
+		width: 173px;
+		height: 182px;
+	}
+	.youtube-icn {
+		width: 155px;
+		height: 169px;
+	}
+	.inst-icn {
+		width: 199px;
+		height: 182px;
+	}
 }
 
 .social__we-in-social {
-  margin-right: 50px;
+	margin-right: 50px;
 }

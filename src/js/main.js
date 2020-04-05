@@ -168,6 +168,29 @@ inputs.forEach(input => {
 	});
 });
 
+// calc A5
+$(document).ready(function () {
+	$('.label-top .sheet').on('click', function () {
+		$(this).toggleClass('active');
+		if ($('.label-top .sheet').hasClass('active') == true) {
+			$('.label-top').addClass('active');
+		} else {
+			$('.label-top').removeClass('active');
+		}
+	})
+})
+
+$(document).ready(function () {
+	$('.label-bottom .sheet').on('click', function () {
+		$(this).toggleClass('active');
+		if ($('.label-bottom .sheet').hasClass('active') == true) {
+			$('.label-bottom').addClass('active');
+		} else {
+			$('.label-bottom').removeClass('active');
+		}
+	})
+})
+
 // step 6 должен делать инпут checked если есть хотя бы один .active у .sheet
 var sheets = document.querySelectorAll('.sheet-select');
 sheets.forEach(sheet => {
@@ -179,5 +202,21 @@ sheets.forEach(sheet => {
 		} else {
 			document.querySelector('#input-step6-1').removeAttribute('checked', '');
 		}
+	})
+})
+
+// checked вторрй этап мобильного кальккулятора
+$(document).ready(function () {
+	$('#input-mobile-step2-2').on('change', function () {
+		$('.calculator-mobile-step2__list-bottom label').attr('disabled', '');
+	})
+	$('#input-mobile-step2-4').on('change', function () {
+		$('.calculator-mobile-step2__list-bottom label').attr('disabled', '');
+	})
+	$('#input-mobile-step2-1').on('change', function () {
+		$('.calculator-mobile-step2__list-bottom label').removeAttr('disabled', '');
+	})
+	$('#input-mobile-step2-3').on('change', function () {
+		$('.calculator-mobile-step2__list-bottom label').removeAttr('disabled', '');
 	})
 })

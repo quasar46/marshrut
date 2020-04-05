@@ -11,7 +11,29 @@ block content
       .container
         .burger-menu
       .main-banner
-        img(src="images/bus.png" alt="")
+        .main-banner__logo
+          img(src="images/logo.svg", alt="")
+        .main-banner__bus
+          .main-banner__bus-bare
+            img(src="images/bus/bus.png" alt="")
+            .animate1
+              img(src="images/bus/dim1.svg", alt="")
+            .animate2
+              img(src="images/bus/dim2.svg", alt="")
+            .animate3
+              img(src="images/bus/zaici.svg", alt="")
+            .animate4
+              img(src="images/bus/molinya1.svg", alt="")
+            .animate5
+              img(src="images/bus/molniya2.svg", alt="")
+            .animate6
+              img(src="images/bus/molniya3.svg", alt="")
+            .animate7
+            .animate8
+            .animate9
+            .animate10
+
+          img(src="images/line-bus.svg" alt="" width="100%")
 
       .container
         .information
@@ -94,25 +116,25 @@ block content
                 ul.calculator-step2__list
                   li.calculator-step2__item
                     .calculator-step2__picture
-                      img(src="images/check-1.svg" alt="")
+                      img(src="images/check-1.svg" alt="" width="200")
                     input.input--mode(type="radio" id="check1" name="check1" value="1")
                     label(for="check1") Брендирование транспорта
 
                   li.calculator-step2__item
                     .calculator-step2__picture
-                      img(src="images/check-2.svg" alt="")
+                      img(src="images/check-2.svg" alt="" width="135")
                     input.input--mode(type="radio" id="check2" name="check1" value="1")
                     label(for="check2") Видеореклама
 
                   li.calculator-step2__item
                     .calculator-step2__picture
-                      img(src="images/check-3.svg" alt="")
+                      img(src="images/check-3.svg" alt="" width="242 ")
                     input.input--mode(type="radio" id="check3" name="check1" value="1")
                     label(for="check3") Реклама на спинках кресел
 
                   li.calculator-step2__item
                     .calculator-step2__picture
-                      img(src="images/check-4.svg" alt="")
+                      img(src="images/check-4.svg" alt="" width="228")
                     input.input--mode(type="radio" id="check4" name="check1" value="1")
                     label(for="check4") Реклама на стикерах
 
@@ -216,7 +238,7 @@ block content
                 ul.calculator-step5__center-list
                   li
                     input(type="radio" id="input-step5-3" name="input-step5")
-                    .calculator-step5__label-wrapper
+                    .calculator-step5__label-wrapper.label-top
                       label(for="input-step5-3")
                         .sheet
                           span A5
@@ -225,7 +247,7 @@ block content
                           span A5
                   li
                     input(type="radio" id="input-step5-4" name="input-step5")
-                    .calculator-step5__label-wrapper
+                    .calculator-step5__label-wrapper.label-bottom
                       label(for="input-step5-4")
                         .sheet
                           span A5
@@ -383,7 +405,7 @@ block content
           button.btn-start.calculator__btn.calculator__start
             span Начать
             .calculator__picture-next
-              img(src="images/mobile/arrow-next.png" alt="")
+              img(src="images/mobile/arrow-next.svg" alt="")
 
 
           // Buttons calculator
@@ -395,7 +417,7 @@ block content
             button.btn-next.calculator__btn.calculator__next
               span Далее
               .calculator__picture-next
-                img(src="images/mobile/arrow-next.png" alt="")
+                img(src="images/mobile/arrow-next.svg" alt="")
 
           .calculator__thanks Спасибы
 
@@ -440,7 +462,7 @@ block content
         .contacts__top
           .contacts__item
             a.contacts__phone(href="tel:546000")
-              img(src="images/phone.png" alt="")
+              img(src="images/phone.png" alt="" width="287" height="208")
             p.text 
               a(href="tel:546000") 546-000
           .contacts__item
@@ -449,7 +471,7 @@ block content
             p.text г. Курск  ул. Карла Либкнехта дом 9а, 4 этаж
           .contacts__item
             a.contacts__mail(href="mailto:info@mtvkursk.com")
-              img(src="images/mail.png" alt="")
+              img(src="images/mail.png" alt="" width="115" height="172px")
             p.text 
               a(href="mailto:info@mtvkursk.com") info@mtvkursk.com
         .contacts__bottom.social

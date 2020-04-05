@@ -44,6 +44,9 @@ main {
 	margin: 0 auto;
 	padding: 0 15px;
 	position: relative;
+	@media (max-width: 1024px) {
+		padding: 0 20px;
+	}
 }
 
 h1,

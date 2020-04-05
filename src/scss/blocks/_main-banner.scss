@@ -1,8 +1,59 @@
 .main-banner {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
-  img {
-    margin-top: -80px;
+}
+
+.main-banner__logo {
+  max-width: 800px;
+  width: 100%;
+}
+
+.main-banner__bus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1698px;
+  width: 100%;
+}
+
+.main-banner__bus-bare {
+  position: relative;
+  width: 906px;
+  div[class*="animate"] {
+    position: absolute;
+  }
+  .animate1 {
+    width: 240px;
+    left: -230px;
+    bottom: 60px;
+  }
+  .animate2 {
+    width: 175px;
+    left: -165px;
+    bottom: 60px;
+  }
+  .animate3 {
+    top: 57px;
+    left: 35%;
+    width: 120px;
+  }
+  .animate4 {
+    top: -14%;
+    left: 55%;
+    width: 64px;
+  }
+  .animate5 {
+    width: 18px;
+    top: -21%;
+    left: 64%;
+  }
+  .animate6 {
+  }
+  .animate7 {
+  }
+  .animate8 {
   }
 }

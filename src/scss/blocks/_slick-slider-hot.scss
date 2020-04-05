@@ -51,6 +51,9 @@
 	padding: 100px 350px;
 	padding-bottom: 0;
 	overflow: visible;
+	@media (max-width: 1100px) {
+		padding: 100px 250px;
+	}
 }
 
 .hot-slider__inner {
@@ -60,7 +63,7 @@
 .slick-slider-hot .slick-prev {
 	font-size: 0;
 	position: absolute;
-	background-image: url("../images/arrow-l.svg") !important;
+	background-image: url("../images/arrow-prev.png") !important;
 	background-repeat: no-repeat;
 	width: 93px;
 	height: 43px;
@@ -70,19 +73,22 @@
 	margin-top: 100px;
 
 	&:hover {
-		background-image: url("../images/arrow-l.svg");
+		background-image: url("../images/arrow-prev.png");
 		background-repeat: no-repeat;
 	}
 
 	&::before {
 		font-size: 0;
 	}
+	@media (max-width: 1100px) {
+		margin-top: 50px;
+	}
 }
 
 .slick-slider-hot .slick-next {
 	font-size: 0;
 	position: absolute;
-	background-image: url("../images/arrow-r.svg") !important;
+	background-image: url("../images/arrow-next.svg") !important;
 	background-repeat: no-repeat;
 	width: 93px;
 	height: 43px;
@@ -91,12 +97,15 @@
 	margin-top: 100px;
 
 	&:hover {
-		background-image: url("../images/arrow-r.svg");
+		background-image: url("../images/arrow-next.svg");
 		background-repeat: no-repeat;
 	}
 
 	&::before {
 		font-size: 0;
+	}
+	@media (max-width: 1100px) {
+		margin-top: 50px;
 	}
 }
 

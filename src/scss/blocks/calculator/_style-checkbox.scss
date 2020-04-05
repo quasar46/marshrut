@@ -7,8 +7,8 @@ input[type="radio"]:not(:checked) {
 }
 
 /////////////////////////////////////////////////////////////////////////
-input.input[type="checkbox"]:checked+label,
-input.input[type="checkbox"]:not(:checked)+label {
+input.input[type="checkbox"]:checked + label,
+input.input[type="checkbox"]:not(:checked) + label {
 	display: inline-block;
 	position: relative;
 	padding-left: 40px;
@@ -16,8 +16,8 @@ input.input[type="checkbox"]:not(:checked)+label {
 	cursor: pointer;
 }
 
-input.input[type="checkbox"]:checked+label::before,
-input.input[type="checkbox"]:not(:checked)+label::before {
+input.input[type="checkbox"]:checked + label::before,
+input.input[type="checkbox"]:not(:checked) + label::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -28,8 +28,8 @@ input.input[type="checkbox"]:not(:checked)+label::before {
 	border-radius: 10px;
 }
 
-input.input[type="checkbox"]:checked+label[disabled]::before,
-input.input[type="checkbox"]:not(:checked)+label[disabled]::before {
+input.input[type="checkbox"]:checked + label[disabled]::before,
+input.input[type="checkbox"]:not(:checked) + label[disabled]::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -40,7 +40,7 @@ input.input[type="checkbox"]:not(:checked)+label[disabled]::before {
 	border-radius: 10px;
 }
 
-input.input[type="checkbox"]:checked+label:after {
+input.input[type="checkbox"]:checked + label:after {
 	content: "";
 	position: absolute;
 	transition: all 0.2s ease;
@@ -51,7 +51,21 @@ input.input[type="checkbox"]:checked+label:after {
 	left: -10px;
 }
 
-input.input[type="checkbox"]:checked+label[disabled]:after {
+// A5
+.label-top.active::after,
+.label-bottom.active::after {
+	content: "";
+	position: absolute;
+	transition: all 0.2s ease;
+	background-image: url("../images/check.png");
+	width: 41px;
+	height: 38px;
+	top: -7px;
+	left: -10px;
+	transition: all 0.2s ease;
+}
+
+input.input[type="checkbox"]:checked + label[disabled]:after {
 	content: "";
 	position: absolute;
 	transition: all 0.2s ease;
@@ -64,9 +78,10 @@ input.input[type="checkbox"]:checked+label[disabled]:after {
 
 /////////////////////////////////////////////////////////////////////////
 
-input.input--mode[type="radio"]:checked+label,
-input.input--mode[type="radio"]:not(:checked)+label {
+input.input--mode[type="radio"]:checked + label,
+input.input--mode[type="radio"]:not(:checked) + label {
 	display: inline-block;
+	text-align: center;
 	position: relative;
 	padding-bottom: 40px;
 	line-height: 40px;
@@ -74,8 +89,8 @@ input.input--mode[type="radio"]:not(:checked)+label {
 	height: auto;
 }
 
-input.input--mode[type="radio"]:checked+label::before,
-input.input--mode[type="radio"]:not(:checked)+label::before {
+input.input--mode[type="radio"]:checked + label::before,
+input.input--mode[type="radio"]:not(:checked) + label::before {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -87,7 +102,7 @@ input.input--mode[type="radio"]:not(:checked)+label::before {
 	border-radius: 10px;
 }
 
-input.input--mode[type="radio"]:checked+label:after {
+input.input--mode[type="radio"]:checked + label:after {
 	content: "";
 	position: absolute;
 	transition: all 0.2s ease;
@@ -100,7 +115,6 @@ input.input--mode[type="radio"]:checked+label:after {
 }
 
 /////////////////////////////////////////////////////////////////////////
-
 
 label[disabled] {
 	span {
@@ -115,4 +129,5 @@ label[disabled] {
 	min-height: 445px;
 }
 
-.mobile-step {}
+.mobile-step {
+}
