@@ -63,7 +63,7 @@
 .slick-slider-hot .slick-prev {
 	font-size: 0;
 	position: absolute;
-	background-image: url("../images/arrow-prev.png") !important;
+	background-image: url("../images/arrow-prev.svg") !important;
 	background-repeat: no-repeat;
 	width: 93px;
 	height: 43px;
@@ -73,7 +73,7 @@
 	margin-top: 100px;
 
 	&:hover {
-		background-image: url("../images/arrow-prev.png");
+		background-image: url("../images/arrow-prev.svg");
 		background-repeat: no-repeat;
 	}
 

@@ -16,6 +16,9 @@
 	.slick-list {
 		overflow: visible;
 	}
+	@media (max-width: 320px) {
+		margin-bottom: 120px;
+	}
 }
 
 .slick-slider-mobile__wrapper {

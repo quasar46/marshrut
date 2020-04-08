@@ -104,11 +104,12 @@ block content
             a(href="#") все
 
         .calculator
-          // Title calculator 
+          //-  Title calculator 
           .calculator__title Калькулятор рекламной <i class="br"></i> кампании
           .calculator__wrapper
+            //- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            // calculator step 1
+            //-  calculator step 1
             .calculator-step.calculator-step1.active
               .calculator-step1__inner
                 .calculator__inner
@@ -116,314 +117,216 @@ block content
                     p.text Текст про калькулятор в стиле "расчитайте свою рекламу с помощью нашего сервиса, это так просто бла бла бла"...Текст про калькулятор в стиле "расчитайте свою рекламу с помощью нашего сервиса, это так просто бла бла бла"...
                   .calculator__right
 
-            // calculator step 2
-            .calculator-step.calculator-step2
-              .calculator-step2-wrapper
-                ul.calculator-step2__list
-                  li.calculator-step2__item
-                    .calculator-step2__picture
-                      img(src="images/check-1.svg" alt="" width="200")
-                    input.input--mode(type="radio" id="check1" name="check1" value="1")
-                    label(for="check1") Брендирование транспорта
-
-                  li.calculator-step2__item
-                    .calculator-step2__picture
-                      img(src="images/check-2.svg" alt="" width="135")
-                    input.input--mode(type="radio" id="check2" name="check1" value="1")
-                    label(for="check2") Видеореклама
-
-                  li.calculator-step2__item
-                    .calculator-step2__picture
-                      img(src="images/check-3.svg" alt="" width="242 ")
-                    input.input--mode(type="radio" id="check3" name="check1" value="1")
-                    label(for="check3") Реклама на спинках кресел
-
-                  li.calculator-step2__item
-                    .calculator-step2__picture
-                      img(src="images/check-4.svg" alt="" width="228")
-                    input.input--mode(type="radio" id="check4" name="check1" value="1")
-                    label(for="check4") Реклама на стикерах
-
-                ul.calculator-step2__list2
-                  li.calculator-step2__item2
-                    input.input(type="checkbox" id="bus1")
-                    label(for="bus1" disabled).bus1
-                      span Микроавтобус <br>
-                      span (Ford, Merscedes, ГазельNext)
-                  li.calculator-step2__item2
-                    input.input(type="checkbox" id="bus2")
-                    label(for="bus2" disabled).bus2
-                      span Микроавтобус <br>
-                      span (Ford, Merscedes, ГазельNext)
-                  li.calculator-step2__item2
-                    input.input(type="checkbox" id="paz1")
-                    label(for="paz1" disabled).paz1
+            //- step 2
+            .calculator-step.step2
+              .step2__wrapper
+                ul.step2__top
+                  li
+                    label(for="step2-1")
+                      .step2__top-pic
+                        img(src="../images/calculator/check-1.svg", alt="" width="202")
+                      span Брендирование транспорта
+                      input(type="radio" name="step2-top" id="step2-1" value="Брендирование транспорта")
+                  li
+                    label(for="step2-2")
+                      .step2__top-pic
+                        img(src="../images/calculator/check-2.svg", alt="" width="117")
+                      span Видеореклама
+                      input(type="radio" name="step2-top" id="step2-2" value="Видеореклама")
+                  li
+                    label(for="step2-3")
+                      .step2__top-pic
+                        img(src="../images/calculator/check-3.svg", alt="" width="177")
+                      span Реклама на спинках кресел
+                      input(type="radio" name="step2-top" id="step2-3" value="Реклама на спинках кресел")
+                  li
+                    label(for="step2-4")
+                      .step2__top-pic
+                        img(src="../images/calculator/check-4.svg", alt="" width="228")
+                      span Реклама на стикерах
+                      input(type="radio" name="step2-top" id="step2-4" value="Реклама на стикерах")
+                ul.step2__bottom
+                  li
+                    label(for="step2-5")
+                      input(type="radio" name="step2-bottom-1" id="step2-5" value="Микроавтобус")
+                      span Микроавтобус <br> (Ford, Merscedes, ГазельNext)
+                  li
+                    label(for="step2-6")
+                      input(type="radio" name="step2-bottom-2" id="step2-6" value="Микроавтобус")
+                      span Микроавтобус <br> (Ford, Merscedes, ГазельNext)
+                  li
+                    label(for="step2-7")
+                      input(type="radio" name="step2-bottom-1" id="step2-7" value="Микроавтобус")
                       span Автобус ПАЗ
-                  li.calculator-step2__item2
-                    input.input(type="checkbox" id="paz2")
-                    label(for="paz2" disabled).paz2
+                  li
+                    label(for="step2-8")
+                      input(type="radio" name="step2-bottom-2" id="step2-8" value="Автобус ПАЗ")
                       span Автобус ПАЗ
 
-            // calculator step 3
-            .calculator-step.calculator-step3
-              ul.calculator-step3-top__list
-                li
-                  input(type="radio" id="input-step3-1" name="input-step3")
-                  label(for="input-step3-1")
-                    img(src="../images/calculator/bus1.png" alt="")
-                li
-                  input(type="radio" id="input-step3-2" name="input-step3")
-                  label(for="input-step3-2")
-                    img(src="../images/calculator/bus2.png" alt="")
-                li
-                  input(type="radio" id="input-step3-3" name="input-step3")
-                  label(for="input-step3-3")
-                    img(src="../images/calculator/bus3.png" alt="")
-              ul.calculator-step3-bottom__list
-                li
-                  input(type="radio" id="input-step3-4" name="input-step3")
-                  label(for="input-step3-4")
-                    img(src="../images/calculator/bus4.png" alt="")
-                li
-                  input(type="radio" id="input-step3-5" name="input-step3")
-                  label(for="input-step3-5")
-                    img(src="../images/calculator/bus5.png" alt="")
-              .select-wrapper
-                .select-wrapper__inner
-                  span Срок размещения
-                  select.select-wrapper__select
-                    option(value="value 1") Пункт 1
-                    option(value="value 1") Пункт 2
-                    option(value="value 1") Пункт 3
-                    option(value="value 1") Пункт 4
-                p Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. 
-                p Предусмотрена индивадуальная подборка маршрута.
+            .calculator-step.step3
+              .step3__wrapper
+                ul.step3__top
+                  li
+                    label(for="step3-1")
+                      input(type="radio" name="step3" id="step3-1" value="Микроавтобус 4м")
+                      .step3__top-pic
+                        img(src="../images/calculator/bus1.png", alt="", width="320")
+                  li
+                    label(for="step3-2")
+                      input(type="radio" name="step3" id="step3-2" value="Микроавтобус 1,8м")
+                      .step3__top-pic
+                        img(src="../images/calculator/bus2.png", alt="", width="320")
+                  li
+                    label(for="step3-3")
+                      input(type="radio" name="step3" id="step3-3" value="Микроавтобус 2,4м")
+                      .step3__top-pic
+                        img(src="../images/calculator/bus3.png", alt="", width="320")
+                ul.step3__bottom
+                  li
+                    label(for="step3-4")
+                      input(type="radio" name="step3" id="step3-4" value="Микроавтобус 1,2м")
+                      .step3__bottom-pic
+                        img(src="../images/calculator/bus4.png", alt="", width="161")
+                  li
+                    label(for="step3-5")
+                      input(type="radio" name="step3" id="step3-5" value="Микроавтобус 3м")
+                      .step3__bottom-pic
+                        img(src="../images/calculator/bus5.png", alt="", width="161")
+                .select
+                  .select__top
+                    span Срок размещения
+                    select
+                      option(value="Срок размещения 1") Срок размещения 1
+                      option(value="Срок размещения 2") Срок размещения 2
+                      option(value="Срок размещения 3") Срок размещения 3
+                  .select__bottom
+                    span Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев.  
+                    span Предусмотрена индивадуальная подборка маршрута.
 
+            .calculator-step.step4
+              .step4__wrapper
+                ul.step4__top
+                  li
+                    label(for="step4-1")
+                      input(type="radio" name="step4" id="step4-1" value="Автобус 1,3м с боку")
+                      .step4__pic
+                        img(src="../images/calculator/bus6.png", alt="")
+                  li
+                    label(for="step4-2")
+                      input(type="radio" name="step4" id="step4-2" value="Автобус 2,3м с боку")
+                      .step4__pic
+                        img(src="../images/calculator/bus7.png", alt="")
+                ul.step4__bottom
+                  li
+                    label(for="step4-3")
+                      input(type="radio" name="step4" id="step4-3" value="Автобус 1,3м сзади")
+                      .step4__pic
+                        img(src="../images/calculator/bus8.png", alt="")
+                .select
+                  .select__top
+                    span Срок размещения
+                    select
+                      option(value="Срок размещения 1") Срок размещения 1
+                      option(value="Срок размещения 2") Срок размещения 2
+                      option(value="Срок размещения 3") Срок размещения 3
+                  .select__bottom
+                    span Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев.  
+                    span Предусмотрена индивадуальная подборка маршрута.
 
-            // calculator step 4
-            .calculator-step.calculator-step4
-              ul.calculator-step4-top__list
-                li
-                  input(type="radio" id="input-step4-1" name="input-step4")
-                  label(for="input-step4-1")
-                    img(src="../images/calculator/bus6.png" alt="")
-                li
-                  input(type="radio" id="input-step4-2" name="input-step4")
-                  label(for="input-step4-2")
-                    img(src="../images/calculator/bus7.png" alt="")
-              ul.calculator-step4-bottom__list
-                li
-                  input(type="radio" id="input-step4-3" name="input-step4")
-                  label(for="input-step4-3")
-                    img(src="../images/calculator/bus8.png" alt="")
-              .select-wrapper
-                .select-wrapper__inner
-                  span Срок размещения
-                  select.select-wrapper__select
-                    option(value="value 1") Пункт 1
-                    option(value="value 1") Пункт 2
-                    option(value="value 1") Пункт 3
-                    option(value="value 1") Пункт 4
-                p Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. 
-                p Предусмотрена индивадуальная подборка маршрута.
-
-            // calculator step 5
-            .calculator-step.calculator-step5
-              .calculator-step5__wrapper
-                ul.calculator-step5__left-list
-                  li
-                    input(type="radio" id="input-step5-1" name="input-step5")
-                    label(for="input-step5-1")
-                      .sheet
-                        span A4
-                  li
-                    input(type="radio" id="input-step5-2" name="input-step5")
-                    label(for="input-step5-2")
-                      .sheet
-                        span A4
-                ul.calculator-step5__center-list
-                  li
-                    input(type="radio" id="input-step5-3" name="input-step5")
-                    .calculator-step5__label-wrapper.label-top
-                      label(for="input-step5-3")
-                        .sheet
-                          span A5
-                      label(for="input-step5-3")
-                        .sheet
-                          span A5
-                  li
-                    input(type="radio" id="input-step5-4" name="input-step5")
-                    .calculator-step5__label-wrapper.label-bottom
-                      label(for="input-step5-4")
-                        .sheet
-                          span A5
-                      label(for="input-step5-4")
-                        .sheet
-                          span A5
-                ul.calculator-step5__right-list
-                  li
-                    input(type="radio" id="input-step5-5" name="input-step5")
-                    label(for="input-step5-5")
-                      .sheet
-                        span A4
-                  li
-                    input(type="radio" id="input-step5-6" name="input-step5")
-                    label(for="input-step5-6")
-                      .sheet
-                        span A4
-                  li
-                    input(type="radio" id="input-step5-7" name="input-step5")
-                    label(for="input-step5-7")
-                      .sheet
-                        span A4
-                  li
-                    input(type="radio" id="input-step5-8" name="input-step5")
-                    label(for="input-step5-8")
-                      .sheet
-                        span A4
-              .select-wrapper
-                .select-wrapper__inner
-                  span Срок размещения
-                  select.select-wrapper__select
-                    option(value="value 1") Пункт 1
-                    option(value="value 1") Пункт 2
-                    option(value="value 1") Пункт 3
-                    option(value="value 1") Пункт 4
-                p Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. 
-                p Предусмотрена индивадуальная подборка маршрута.
-
-
-            // calculator step 6
-            .calculator-step.calculator-step6
-              .calculator-step6__wrapper
-                ul.calculator-step6__left-list
-                  li
-                    input(type="checkbox" id="input-step6-1" name="input-step6-top")
-                    label(for="input-step6-1")
-                      .sheet.sheet-select
-                        span A6+
-                  li
-                    input(type="radio" id="input-step6-2" name="input-step6")
-                    label(for="input-step6-2")
-                      .sheet
-                        span A5
-                  li
-                    input(type="radio" id="input-step6-3" name="input-step6")
-                    label(for="input-step6-3")
-                      .sheet
-                        span A5
-                ul.calculator-step6__center-list
-                  li
-                    label(for="input-step6-4")
-                      .sheet.sheet-select
-                        span A6+
-                  li
-                    input(type="radio" id="input-step6-5" name="input-step6")
-                    label(for="input-step6-5")
-                      .sheet
-                        span A4
-                ul.calculator-step6__right-list
-                  li
-                    label(for="input-step6-6")
-                      .sheet.sheet-select
-                        span A6+
-                  li
-                    input(type="radio" id="input-step6-7" name="input-step6")
-                    label(for="input-step6-7")
-                      .sheet
-                        span A4
-              .select-wrapper
-                .select-wrapper__inner
-                  span Срок размещения
-                  select.select-wrapper__select
-                    option(value="value 1") Пункт 1
-                    option(value="value 1") Пункт 2
-                    option(value="value 1") Пункт 3
-                    option(value="value 1") Пункт 4
-                p Брендирование проводится перфорированной пленкой высокого качества на срок от 3-х месяцев. 
-                p Предусмотрена индивадуальная подборка маршрута.
-
-            // calculator step 7
-            .calculator-step.calculator-step7
-              .calculator-step7__wrapper
-                .calculator-step7__top
-                  ul.calculator-step7__top-left-list
+            .calculator-step.step7
+              .step7__wrapper
+                .step7__top
+                  ul.step7__top-left
                     li
-                      input(type="radio" id="input-step7-1" name="input-step71")
-                      label(for="input-step7-1")
+                      label(for="step7-1")
+                        input(type="radio" name="step7-1" id="step7-1" value="Формат А4")
                         .sheet
                           span A4
-                  ul.calculator-step7__top-right-list
+                  ul.step7__top-right
                     li
-                      input(type="radio" id="input-step7-2" name="input-step72")
-                      label(for="input-step7-2")
+                      label(for="step7-2")
+                        input(type="radio" name="step7-2" id="step7-2" value="Формат А4-30шт")
                         span 30 шт
                     li
-                      input(type="radio" id="input-step7-3" name="input-step72")
-                      label(for="input-step7-3")
+                      label(for="step7-3")
+                        input(type="radio" name="step7-2" id="step7-3" value="Формат А4-40шт")
                         span 40 шт
                     li
-                      input(type="radio" id="input-step7-4" name="input-step72")
-                      label(for="input-step7-4")
+                      label(for="step7-4")
+                        input(type="radio" name="step7-2" id="step7-4" value="Формат А4-50шт")
                         span 50 шт
-                .calculator-step7__bottom
-                  ul.calculator-step7__top-left-list
+                .step7__bottom
+                  ul.step7__bottom-left
                     li
-                      input(type="radio" id="input-step7-5" name="input-step71")
-                      label(for="input-step7-5")
+                      label(for="step7-5")
+                        input(type="radio" name="step7-1" id="step7-5" value="Формат А3")
                         .sheet
                           span A3
-                  ul.calculator-step7__top-right-list
+                  ul.step7__bottom-right
                     li
-                      input(type="radio" id="input-step7-6" name="input-step73")
-                      label(for="input-step7-6")
+                      label(for="step7-6")
+                        input(type="radio" name="step7-3" id="step7-6" value="Формат А3-30щт")
                         span 30 шт
                     li
-                      input(type="radio" id="input-step7-7" name="input-step73")
-                      label(for="input-step7-7")
+                      label(for="step7-7")
+                        input(type="radio" name="step7-3" id="step7-7" value="Формат А3-40шт")
                         span 40 шт
                     li
-                      input(type="radio" id="input-step7-8" name="input-step73")
-                      label(for="input-step7-8")
+                      label(for="step7-8")
+                        input(type="radio" name="step7-3" id="step7-8" value="Формат А3-50шт")
                         span 50 шт
-              p.text Минимальное размещение - 30 маршрутных такси, печать, ламинирование и монтаж рекламно-информационных материалов входит в стоимость размещения
+                p Минимальное размещение - 30 маршрутных такси, печать, ламинирование и монтаж рекламно-информационных материалов входит в стоимость размещения
 
-            // calculator step 8
-            .calculator-step.calculator-step8
-              .calculator-step8__picture
-                img(src="../images/luck.png", alt="")
-              .calculator-step8__wrapper
-                p.text Укажите свои контактные данные. В ближайшее время с Вами свяжется наш менеджер.
-                ul.calculator-step8__list
-                  li
-                    label(for="name") ФИО
-                    input(type="text" id="name")
-                  li
-                    label(for="email") E-mail
-                    input(type="email" id="email")
-                  li
-                    label(for="phone") Номер
-                    input(type="text" id="phone")
-                  input(type="checkbox" id="concent")
-                  label(for="concent") Я согласен с условиями обработки персональных данных
+            .calculator-step.step8
+              .step8__wrapper
+                p Укажите свои контактные данные. В ближайшее время с Вами свяжется наш менеджер.
+                form(action="")
+                  ul.step8__list
+                    li
+                      label(for="")
+                        span ФИО
+                        input(type="text")
+                    li
+                      label(for="")
+                        span E-mail
+                        input(type="text")
+                    li
+                      label(for="")
+                        span Номер
+                        input(type="text")
+                label(for="concent")
+                  input(type="checkbox" id="concent" value="Согласие на обработку персональных данных")
+                  span Я согласен с условиями обрабьотки персональных данных
 
-          // btn start
+
+
+
+
+
+
+
+
+
+
+          //- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+          //-  btn start
           button.btn-start.calculator__btn.calculator__start
             span Начать
             .calculator__picture-next
-              img(src="images/mobile/arrow-next.svg" alt="")
+              img(src="images/arrow-next.svg" alt="" width="93")
 
 
-          // Buttons calculator
+          //-  Buttons calculator
           .calculator__btns
             button.btn-prev.calculator__btn.calculator__prev
               .calculator__picture-prev
-                img(src="images/mobile/arrow-back.png" alt="")
+                img(src="images/arrow-prev.svg" alt="" width="93")
               span Назад
             button.btn-next.calculator__btn.calculator__next
               span Далее
               .calculator__picture-next
-                img(src="images/mobile/arrow-next.svg" alt="")
+                img(src="images/arrow-next.svg" alt="" width="93")
 
           .calculator__thanks Спасибы
 

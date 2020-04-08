@@ -192,18 +192,36 @@ $(document).ready(function () {
 })
 
 // step 6 должен делать инпут checked если есть хотя бы один .active у .sheet
-var sheets = document.querySelectorAll('.sheet-select');
-sheets.forEach(sheet => {
-	var sheetsActive = document.querySelectorAll('sheet.active');
-	sheet.addEventListener('click', function () {
-		this.classList.toggle('active');
-		if (sheetsActive.length < 1) {
-			document.querySelector('#input-step6-1').setAttribute('checked', '');
-		} else {
-			document.querySelector('#input-step6-1').removeAttribute('checked', '');
+// var sheets = document.querySelectorAll('.sheet-select');
+// sheets.forEach(sheet => {
+// 	var sheetsActive = document.querySelectorAll('sheet.active');
+// 	sheet.addEventListener('click', function () {
+// 		this.classList.toggle('active');
+// 		if (sheetsActive.length < 1) {
+// 			document.querySelector('#input-step6-1').setAttribute('checked', '');
+// 		} else {
+// 			document.querySelector('#input-step6-1').removeAttribute('checked', '');
+// 		}
+// 	})
+// })
+document.addEventListener('DOMContentLoaded', function () {
+	function searchActive() {
+		let sheets = document.querySelectorAll('.sheet-select');
+		for (let i = 0; i < length.sheets; i++) {
+			sheets[i].addEventListener('click', function () {
+				sheets[i].classList.toggle('active');
+			})
 		}
-	})
-})
+		// if (sheets.every(n => document.querySelector(`#${n}`).classList.contains('active'))) {
+
+		// }
+	}
+
+	searchActive()
+});
+
+
+
 
 // checked вторрй этап мобильного кальккулятора
 $(document).ready(function () {
