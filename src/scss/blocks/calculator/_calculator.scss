@@ -103,9 +103,13 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                position: relative;
                 .step2__top-pic1 {
                     position: relative;
                     height: 130px;
+                }
+                .step2__top-pic {
+                    height: 150px;
                 }
             }
             &:nth-child(2) {
@@ -134,10 +138,41 @@
                     }
                 }
             }
+            label[for="step2-2"] {
+                .step2__top-pic {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: -72px;
+                        left: 0px;
+                        background-image: url("../images/calculator/antena.png");
+                        width: 68px;
+                        height: 72px;
+                    }
+                }
+            }
+            label[for="step2-3"] {
+                .step2__top-pic {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: -132px;
+                        left: -68px;
+                        background-image: url("../images/calculator/tut.png");
+                        width: 157px;
+                        height: 169px;
+                    }
+                }
+            }
             span {
                 font-family: $opensans-font;
                 font-size: 18px;
                 margin-bottom: 25px;
+            }
+            input {
+                order: 1;
             }
         }
     }
