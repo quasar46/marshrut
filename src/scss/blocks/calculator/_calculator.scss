@@ -8,6 +8,13 @@
     }
 }
 
+.calculator-step {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
 .calculator-step1 {
     .calculator-step1__inner {
         display: flex;

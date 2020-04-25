@@ -76,8 +76,8 @@ var btnStart = document.querySelector('.btn-start');
 var btnPrev = document.querySelector('.btn-prev');
 var btnNext = document.querySelector('.btn-next');
 var btns = document.querySelector('.calculator__btns');
-var step1 = document.querySelector('.calculator-step1');
-var step2 = document.querySelector('.calculator-step2');
+var step1 = document.querySelector('.calculator-step.calculator-step1');
+var step2 = document.querySelector('.calculator-step.step2');
 
 btnStart.addEventListener('click', function () {
 	step2.classList.add('active');
